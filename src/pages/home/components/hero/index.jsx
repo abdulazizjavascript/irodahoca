@@ -46,12 +46,12 @@ export default function Page() {
           <div className="flex items-center justify-center gap-4">
             <button
               onClick={() => setIsModalOpen( true )}
-              className="bg-red-600 text-white px-12 py-4 rounded-full text-xl hover:bg-red-700 transition-colors"
+              className="-mt-14 z-10 bg-red-600 text-white px-12 py-4 rounded-full text-xl hover:bg-red-700 transition-colors"
             >
               ISHTIROK ETISH
             </button>
-            <span className="text-2xl font-bold">BEPUL</span>
           </div>
+          <span className="text-2xl font-bold">BEPUL</span>
         </div>
       </div>
 

@@ -1,7 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
+
+import { useState } from 'react'
 import { CircleDotIcon } from 'lucide-react'
+import RegisterModal from '../../../../components/registeration-modal'
 
 export default function Plans() {
+  const [ isModalOpen, setIsModalOpen ] = useState( false )
+
   const questions = [
     {
       text: "UZTURK o'quv markazimizning 1000 lab o'quvchilarda sinab ko'rilgan sara metodikalar"
@@ -36,6 +41,17 @@ export default function Plans() {
             </li>
           ) )}
         </ul>
+
+        <div className="flex items-center justify-center gap-4">
+          <button
+            onClick={() => setIsModalOpen( true )}
+            className="bg-red-600 text-white px-12 py-4 rounded-full text-xl hover:bg-red-700 transition-colors"
+          >
+            ISHTIROK ETISH
+          </button>
+        </div>
+
+        <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />
       </div>
     </div>
   )
