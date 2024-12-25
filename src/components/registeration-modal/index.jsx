@@ -31,7 +31,13 @@ export default function RegisterModal( { isOpen, onClose } ) {
   const onSubmit = async ( data ) => {
     try {
       setLoading( true )
+
+      data.phone = data.phone.replace( /[^\d]/g, '' ).replace( /^998(\d{2})(\d{7})$/, '+998$1$2' );
+
+      console.log( data );
+
       axios.post( 'https://irodahoca-production.up.railway.app/register', data );
+
       navigate( '/telegram' )
     } catch ( err ) {
       console.log( err )
