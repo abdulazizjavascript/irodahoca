@@ -36,6 +36,7 @@ export default function Page() {
           <LazyLoadImage
             className="mx-auto mb-8 rounded-3xl w-full"
             alt="Irodahoca"
+            fetchPriority='high'
             effect="blur"
             wrapperProps={{
               style: { transitionDelay: "0.5s" },

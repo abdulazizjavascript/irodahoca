@@ -4,9 +4,13 @@ import InputMask from 'react-input-mask'
 import { useEffect, useState } from 'react'
 
 import PropTypes from 'prop-types'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 export default function RegisterModal( { isOpen, onClose } ) {
   const [ showModal, setShowModal ] = useState( false )
+  const [ loading, setLoading ] = useState( false );
+  const navigate = useNavigate();
 
   const {
     register,
@@ -24,9 +28,16 @@ export default function RegisterModal( { isOpen, onClose } ) {
     }
   }, [ isOpen ] )
 
-  const onSubmit = ( data ) => {
-    console.log( data )
-    onClose()
+  const onSubmit = async ( data ) => {
+    try {
+      setLoading( true )
+      axios.post( 'https://irodahoca-production.up.railway.app/register', data );
+      navigate( '/telegram' )
+    } catch ( err ) {
+      console.log( err )
+    } finally {
+      setLoading( false )
+    }
   }
 
   if ( !showModal ) return null
@@ -74,11 +85,11 @@ export default function RegisterModal( { isOpen, onClose } ) {
               Ismingiz
             </label>
             <input
-              {...register( 'username', { required: 'Ismingizni kiriting' } )}
+              {...register( 'name', { required: 'Ismingizni kiriting' } )}
               className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none"
             />
-            {errors.username && (
-              <p className="text-red-500 text-sm mt-1">{errors.username.message}</p>
+            {errors.name && (
+              <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
             )}
           </div>
 
@@ -91,10 +102,10 @@ export default function RegisterModal( { isOpen, onClose } ) {
               mask="+\9\98 (99) 999-99-99"
               maskPlaceholder="-"
               {...register( 'phone', {
-                required: 'Phone number is required',
+                required: 'Telefon raqamingizni kiriting',
                 pattern: {
                   value: /^\+998 \(\d{2}\) \d{3}-\d{2}-\d{2}$/,
-                  message: 'Please enter a valid phone number'
+                  message: "Telefon raqamingizni to'g'ri kiriting"
                 }
               } )}
               className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none"
@@ -109,13 +120,35 @@ export default function RegisterModal( { isOpen, onClose } ) {
 
           <div className="flex justify-end gap-4 pt-4">
             <button
+              disabled={loading}
               type="submit"
-              className="w-full px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
+              className="flex disabled:opacity-75 items-center justify-center gap-6 w-full px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
             >
-              Davom etish
+              {loading ? <svg
+                className="w-5 h-5 animate-spin text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.963 7.963 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg> : null}
+              <span>Davom etish</span>
             </button>
           </div>
         </form>
+
       </div>
     </div>
   )
