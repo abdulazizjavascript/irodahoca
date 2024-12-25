@@ -10,14 +10,14 @@ export default function Page() {
   const [ isModalOpen, setIsModalOpen ] = useState( false )
 
   return (
-    <div className="min-h-screen bg-pink-100">
+    <div className="bg-pink-100">
       <div className="container mx-auto px-3 py-8 text-center">
         <div className="inline-block rounded-full border border-black border-dashed px-8 py-2 mb-2">
           4-5-6-yanvar | Soat 20:30 da
         </div>
 
         <p className="text-md mb-4">
-          Turk tili bo'yicha ekspert IRODAHOCA va UZTURK o'quv markazi tomonidan 3 kunlik onlayn vibenar
+          Turk tili bo'yicha ekspert IRODAHOCA va UZTURK o'quv markazi tomonidan 3 kunlik onlayn vebinar
         </p>
 
         <h1 className="text-4xl font-bold mb-3"><span className='text-green-600'>SERTIFIKAT</span> <span className='text-red-600'>SIRLARI</span></h1>
@@ -46,7 +46,7 @@ export default function Page() {
           <div className="flex items-center justify-center gap-4">
             <button
               onClick={() => setIsModalOpen( true )}
-              className="-mt-14 z-10 bg-red-600 text-white px-12 py-4 rounded-full text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className="mb-3 -mt-14 z-10 bg-red-600 text-white px-12 py-4 rounded-full text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               ISHTIROK ETISH
             </button>

@@ -21,9 +21,9 @@ export default function Plans() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-12 space-y-4 bg-pink-100">
-      <div className="space-y-2 text-center">
+      <div className="space-y-6 text-center">
         <h1 className="text-3xl font-bold">
-          <span className="bg-green-600 text-white ps-4 pe-2 rounded-tl-xl rounded-bl-xl"> SERTIFIKAT </span> <span className="bg-red-600 text-white ps-2 pe-4 rounded-tr-xl rounded-br-xl">SIRLARI</span>
+          <span className="bg-green-600 text-white py-2 ps-4 pe-2 rounded-tl-xl rounded-bl-xl"> SERTIFIKAT </span> <span className="bg-red-600 py-2 text-white ps-2 pe-4 rounded-tr-xl rounded-br-xl">SIRLARI</span>
         </h1>
         <p className="text-2xl font-medium">4-5-6-YANVAR</p>
       </div>
