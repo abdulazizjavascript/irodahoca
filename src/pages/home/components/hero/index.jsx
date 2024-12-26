@@ -16,9 +16,9 @@ export default function Page() {
           4-5-6-yanvar | Soat 20:30 da
         </div>
 
-        <p className="text-md mb-4">
+        <h3 className="text-md font-bold mb-4">
           Turk tili bo'yicha ekspert IRODAHOCA va UZTURK o'quv markazi tomonidan 3 kunlik onlayn vebinar
-        </p>
+        </h3>
 
         <h1 className="text-4xl font-bold mb-3"><span className='text-green-600'>SERTIFIKAT</span> <span className='text-red-600'>SIRLARI</span></h1>
 
@@ -48,7 +48,8 @@ export default function Page() {
               ISHTIROK ETISH
             </button>
           </div>
-          <span className="text-2xl font-bold text-red-600">BEPUL</span>
+          <p className="text-2xl font-bold text-red-600">BEPUL</p>
+          <span className="text-sm">Vibenarga qatnashish orqali hech bo'lmaganda katta sovg'a va bonuslar yutib olishingiz mumkin.</span>
         </div>
       </div>
 
