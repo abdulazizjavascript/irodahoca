@@ -34,13 +34,10 @@ export default function Page() {
 
         <div className="relative max-w-xl mx-auto">
           <LazyLoadImage
-            className="mx-auto mb-8 rounded-3xl w-full"
+            className="mx-auto mb-8 rounded-3xl w-full object-cover h-[250px]"
             alt="Irodahoca"
             fetchPriority='high'
             effect="blur"
-            wrapperProps={{
-              style: { transitionDelay: "0.5s" },
-            }}
             src={irodahoca} />
 
           <div className="flex items-center justify-center gap-4">
