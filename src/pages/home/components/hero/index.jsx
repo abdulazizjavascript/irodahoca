@@ -20,10 +20,10 @@ export default function Page() {
           Turk tili bo'yicha ekspert IRODAHOCA va UZTURK o'quv markazi tomonidan 3 kunlik onlayn vebinar
         </h3>
 
-        <h1 className="text-4xl font-bold mb-3"><span className='text-green-600'>SERTIFIKAT</span> <span className='text-red-600'>SIRLARI</span></h1>
+        <h1 className="text-3xl font-bold mb-3"><span className='text-green-600'>SERTIFIKAT</span> <span className='text-red-600'>SIRLARI</span></h1>
 
         <div className="max-w-3xl mx-auto mb-8">
-          <h2 className="text-xl font-semibold mb-4">
+          <h2 className="text-lg font-semibold mb-4">
             Qanday qilib 3 oy ichida turk tilidan B2 sertifikatga erishish mumkin ?
           </h2>
 
