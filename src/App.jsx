@@ -9,7 +9,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path='/instagram-photo' element={<InstagramPhoto />} />
+        <Route path='/ins' element={<InstagramPhoto />} />
         <Route path='/telegram' element={<Telegram />} />
       </Routes>
     </BrowserRouter>
