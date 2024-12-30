@@ -11,11 +11,13 @@ export default function Page() {
 
   return (
     <div className="bg-pink-100">
-      <div className="container mx-auto px-3 py-8 text-center">
+      <div className="container mx-auto px-3 pt-4 pb-8 text-center">
+        <div className='bg-black rounded-md py-1 mb-2'>
+          <h2 className='text-2xl text-yellow-500 font-bebas'>Turk tili hamjamiyatiga xush kelibsiz!</h2>
+        </div>
         <div className="inline-block rounded-full border border-black border-dashed px-8 py-2 mb-2">
           4-5-6-yanvar | Soat 20:30 da
         </div>
-
         <h3 className="text-md font-bold mb-4">
           Turk tili bo'yicha ekspert IRODAHOCA va UZTURK o'quv markazi tomonidan 3 kunlik onlayn vebinar
         </h3>
@@ -49,7 +51,7 @@ export default function Page() {
             </button>
           </div>
           <p className="text-2xl font-bold text-red-600">BEPUL</p>
-          <span className="text-sm">Vibenarga qatnashish orqali hech bo'lmaganda katta sovg'a va bonuslar yutib olishingiz mumkin.</span>
+          <span className="text-sm">100% sertifikatli qiladigan sirlarni bilib oling</span>
         </div>
       </div>
 

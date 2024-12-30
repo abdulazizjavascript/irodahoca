@@ -16,6 +16,10 @@ export default {
       animation: {
         pulseGlow: 'pulseGlow 2s infinite',
       },
+      fontFamily: {
+        // Add a custom font family name: "bebas"
+        bebas: [ '"Bebas Neue"', 'sans-serif' ],
+      },
     },
   },
   plugins: [],
