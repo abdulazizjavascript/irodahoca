@@ -12,7 +12,7 @@ export default function Telegram() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-            <h1 className="text-3xl md:text-6xl font-bold text-gray-900">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
               Oxirgi qadam qoldi 🥳
             </h1>
             <p className="text-sm md:text-2xl text-gray-600 max-w-xl">
