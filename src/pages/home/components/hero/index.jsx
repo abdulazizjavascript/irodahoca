@@ -45,12 +45,12 @@ export default function Page() {
           <div className="flex items-center justify-center gap-4">
             <button
               onClick={() => setIsModalOpen( true )}
-              className="mb-3 -mt-14 z-10 bg-red-600 text-white px-12 py-4 rounded-full text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className=" -mt-14 z-10 bg-red-600 text-white px-12 py-4 rounded-full text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               ISHTIROK ETISH
             </button>
           </div>
-          <p className="text-2xl font-bold text-red-600">BEPUL</p>
+          <p className="text-xl font-bold text-red-600">BEPUL</p>
           <span className="text-sm">100% sertifikatli qiladigan sirlarni bilib oling</span>
         </div>
       </div>
