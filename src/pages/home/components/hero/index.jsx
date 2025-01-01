@@ -26,7 +26,7 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto mb-8">
           <h2 className="text-lg font-semibold mb-4">
-            Qanday qilib 3 oy ichida turk tilidan B2 sertifikatga erishish mumkin ?
+            Qanday qilib 3 oy ichida turk tilini o'rganib, sertifikat olish mumkin ?
           </h2>
 
           <p className="text-sm mb-3">
