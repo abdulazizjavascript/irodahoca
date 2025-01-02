@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         // Add a custom font family name: "bebas"
         bebas: [ '"Bebas Neue"', 'sans-serif' ],
+        condensed: [ 'Roboto Condensed', 'sans-serif' ],
       },
     },
   },
