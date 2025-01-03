@@ -30,7 +30,7 @@ const CertificateView = ( { name, certificateRef } ) => {
       {/* Content */}
       <div className="mt-12 text-center">
         <h1 className="font-bold uppercase text-6xl px-4 mb-10 font-cursive text-yellow-500 mt-4 inline-block">
-          {name} fdasfdfdaads
+          {name}
         </h1>
         <div className="mx-28 h-[1px] bg-white"></div>
         <p className="text-xl text-white">
