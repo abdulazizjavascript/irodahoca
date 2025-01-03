@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const CertificateView = ( { name, certificateRef } ) => {
   return (
-    <div ref={certificateRef} className="fixed left-[10000px] top-[10000px] -z-10 font-condensed bg-[url('/uzturk-flag.png')] bg-cover bg-center w-[1123px] h-[794px] bg-white border-8 border-yellow-500 py-16 px-20 mx-auto">
+    <div ref={certificateRef} className="relative font-condensed bg-[url('/uzturk-flag.png')] bg-cover bg-center w-[1123px] h-[794px] bg-white border-8 border-yellow-500 py-16 px-20 mx-auto">
       {/* Border Decorations */}
       <div className="absolute top-5 left-5">
         <img width="200px" src="/pattern.png" alt="Pattern" />
@@ -55,6 +55,10 @@ const CertificateView = ( { name, certificateRef } ) => {
           <p className="text-xl font-cursive">ABDULAZIZ TOSHPULATOV</p>
           <p className="text-sm">RAHBAR</p>
         </div>
+      </div>
+
+      <div className="text-center mt-10">
+        <p className="text-white">04.01.2025</p>
       </div>
     </div>
   );
