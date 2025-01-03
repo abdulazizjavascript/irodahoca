@@ -6,39 +6,39 @@ import CertificateView from './components/view'
 
 export default function CertificatePage() {
   const [ name, setName ] = useState( '' )
+  const [ isLoading, setIsLoading ] = useState( false );
+
   const certificateRef = useRef( null );
 
   const handleSubmit = async ( e ) => {
-    e.preventDefault()
-    if ( certificateRef.current ) {
+    try {
+      e.preventDefault()
+      if ( certificateRef.current ) {
+        setIsLoading( true );
+        // Capture the element as a canvas
+        const canvas = await html2canvas( certificateRef.current );
 
-      // Capture the element as a canvas
-      const canvas = await html2canvas( certificateRef.current, {
-        scale: 2,
-        width: 1123,
-        height: 794,
-        backgroundColor: '#ffffff',
-        useCORS: true,
-        logging: false,
-        removeContainer: true,
-        allowTaint: true,
-      } );
+        const image = canvas.toDataURL( "image/png" );
 
-      const image = canvas.toDataURL( "image/png" );
-
-      const link = document.createElement( "a" );
-      link.href = image;
-      link.download = `${name} 1-kun sertifikati`; // File name for the downloaded certificate
-      link.click();
+        const link = document.createElement( "a" );
+        link.href = image;
+        link.download = `${name} 1-kun sertifikati`; // File name for the downloaded certificate
+        link.click();
+      }
+    } finally {
+      setIsLoading( false )
     }
   }
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-md w-full">
-        <h1 className="text-3xl font-bold text-center text-primary mb-8">
-          Sertifikat generatori
-        </h1>
+        <div className="mb-3 text-center">
+          <span>Turk tili bo'yicha O'zbekistondagi eng katta</span>
+          <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500">SERTIFIKAT</span> <span className="text-red-500">SIRLARI</span></h1>
+          <span>nomli vibenarimizning 1-kunida qatnashganingiz uchun tashakkur. Qolgan kunlarda ham sizni kutamiz 😍</span>
+          <h1 className='mt-3 font-bold'>Marhamat, ism familiyangizni kiritib sertifikatingizni olishingiz mumkin</h1>
+        </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
@@ -50,10 +50,10 @@ export default function CertificatePage() {
           />
           <button
             type="submit"
-            disabled={!name.trim()}
+            disabled={!name.trim() || isLoading}
             className="w-full bg-black text-white py-2 rounded-lg hover:bg-primary/90 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
           >
-            Ko'rish
+            Yuklab olish
           </button>
         </form>
         <CertificateView certificateRef={certificateRef} name={name} />
