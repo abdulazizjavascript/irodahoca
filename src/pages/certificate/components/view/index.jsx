@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const CertificateView = ( { name, certificateRef } ) => {
   return (
-    <div ref={certificateRef} className="left-[10000px] top-[10000px] fixed -z-10 font-condensed bg-[url('/uzturk-flag.png')] bg-cover bg-center w-[1123px] h-[794px] bg-white border-8 border-yellow-500 py-16 px-20 mx-auto">
+    <div ref={certificateRef} className="fixed left-[10000px] top-[10000px] -z-10 font-condensed bg-[url('/uzturk-flag.png')] bg-cover bg-center w-[1123px] h-[794px] bg-white border-8 border-yellow-500 py-16 px-20 mx-auto">
       {/* Border Decorations */}
       <div className="absolute top-5 left-5">
         <img width="200px" src="/pattern.png" alt="Pattern" />
@@ -41,7 +41,8 @@ const CertificateView = ( { name, certificateRef } ) => {
       {/* Signatures */}
       <div className="mt-12 mx-16 flex justify-between items-center text-white">
         <div className="text-center">
-          <div className="h-[1px] bg-white mb-3"></div>
+          <img className="h-20 mx-auto" src="/iroda-sign.png" alt="IRODAHOCA" />
+          <div className="h-[2px] bg-white mb-3"></div>
           <p className="text-xl font-cursive">IRODAHOCA NASRIDDINOVA</p>
           <p className="text-sm">BOSH USTOZ</p>
         </div>
@@ -49,7 +50,8 @@ const CertificateView = ( { name, certificateRef } ) => {
           <img className="w-full rounded-full" src="/uzturk-square.png" alt="UZTURK" />
         </div>
         <div className="text-center">
-          <div className="h-[1px] bg-white mb-3"></div>
+          <img className="h-20 mx-auto" src="/abdulaziz-sign.png" alt="Abdulaziz" />
+          <div className="h-[2px] bg-white mb-3"></div>
           <p className="text-xl font-cursive">ABDULAZIZ TOSHPULATOV</p>
           <p className="text-sm">RAHBAR</p>
         </div>
