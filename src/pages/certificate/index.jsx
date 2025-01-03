@@ -24,7 +24,7 @@ export default function CertificatePage() {
 
         const link = document.createElement( "a" );
         link.href = image;
-        link.download = `${name} 1-kun sertifikati`; // File name for the downloaded certificate
+        link.download = `${name} uchun 1-sertifikat`; // File name for the downloaded certificate
         link.click();
 
         navigate( '/bye' )
