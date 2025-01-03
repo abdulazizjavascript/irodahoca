@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import CertificateView from './components/view'
 
@@ -8,6 +9,7 @@ export default function CertificatePage() {
   const [ name, setName ] = useState( '' )
   const [ isLoading, setIsLoading ] = useState( false );
 
+  const navigate = useNavigate()
   const certificateRef = useRef( null );
 
   const handleSubmit = async ( e ) => {
@@ -24,6 +26,8 @@ export default function CertificatePage() {
         link.href = image;
         link.download = `${name} 1-kun sertifikati`; // File name for the downloaded certificate
         link.click();
+
+        navigate( '/bye' )
       }
     } finally {
       setIsLoading( false )
@@ -51,7 +55,7 @@ export default function CertificatePage() {
           <button
             type="submit"
             disabled={!name.trim() || isLoading}
-            className="w-full bg-black text-white py-2 rounded-lg hover:bg-primary/90 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+            className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-primary/90 disabled:bg-red-300 disabled:cursor-not-allowed transition-colors"
           >
             Yuklab olish
           </button>
