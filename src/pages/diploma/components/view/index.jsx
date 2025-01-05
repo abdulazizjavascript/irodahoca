@@ -6,21 +6,21 @@ const DiplomaView = ( { name, diplomaRef } ) => {
   return (
     <div ref={diplomaRef} className="fixed left-[10000px] top-[10000px] -z-10 py-8 font-condensed bg-[url('/uzturk-flag.png')] bg-cover bg-center w-[1123px] h-[794px] bg-white border-8 border-yellow-500 px-20 mx-auto">
       {/* Border Decorations */}
-      <div className="absolute top-5 left-5">
-        <img width="200px" src="/pattern.png" alt="Pattern" />
+      <div className="absolute top-0 left-0">
+        <img className="-rotate-90" width="300px" src="/christmas-corner.png" alt="christmas-corner" />
       </div>
-      <div className="absolute top-5 right-5">
-        <img className="rotate-90" width="200px" src="/pattern.png" alt="Pattern" />
+      <div className="absolute top-0 right-0">
+        <img width="300px" src="/christmas-corner.png" alt="christmas-corner" />
       </div>
-      <div className="absolute bottom-5 left-5">
-        <img className="-rotate-90" width="200px" src="/pattern.png" alt="Pattern" />
+      <div className="absolute bottom-0 right-0">
+        <img className="rotate-90" width="300px" src="/christmas-corner.png" alt="christmas-corner" />
       </div>
-      <div className="absolute bottom-5 right-5">
-        <img className="rotate-180" width="200px" src="/pattern.png" alt="Pattern" />
+      <div className="absolute bottom-0 left-0">
+        <img className="rotate-180" width="300px" src="/christmas-corner.png" alt="christmas-corner" />
       </div>
 
       {/* Certificate Title */}
-      <div className="text-center text-white">
+      <div className="mb-20 text-center text-white">
         <h1 className="mb-8 text-8xl font-bold text-yellow-500">DIPLOM</h1>
         <h2>
           <span className="text-xl"> Endi siz </span>
@@ -30,7 +30,7 @@ const DiplomaView = ( { name, diplomaRef } ) => {
       </div>
 
       {/* Content */}
-      <div className="mt-12 text-center">
+      <div className="text-center">
         <h1 className="font-bold uppercase text-6xl px-4 mb-10 font-cursive text-yellow-500 mt-4 inline-block">
           {name}
         </h1>
