@@ -6,6 +6,7 @@ import Telegram from "./pages/telegram"
 import CertificatePage from "./pages/certificate"
 import ByePage from "./pages/bye"
 import DiplomaPage from "./pages/diploma"
+import TashakkurnomaPage from "./pages/tashakkurnoma"
 
 const App = () => {
   return (
@@ -14,9 +15,10 @@ const App = () => {
         <Route index element={<HomePage />} />
         <Route path='/ins' element={<InstagramPhoto />} />
         <Route path='/telegram' element={<Telegram />} />
-        <Route path='/certificate' element={<CertificatePage />} />
-        <Route path='/diploma' element={<DiplomaPage />} />
+        {/* <Route path='/certificate' element={<CertificatePage />} /> */}
+        {/* <Route path='/diploma' element={<DiplomaPage />} /> */}
         <Route path='/bye' element={<ByePage />} />
+        <Route path='/tashakkurnoma' element={<TashakkurnomaPage />} />
       </Routes>
     </BrowserRouter>
   )
