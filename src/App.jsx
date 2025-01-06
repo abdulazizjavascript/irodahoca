@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HomePage from "./pages/home"
 import InstagramPhoto from "./pages/instagram-photo"
 import Telegram from "./pages/telegram"
-import CertificatePage from "./pages/certificate"
+// import CertificatePage from "./pages/certificate"
 import ByePage from "./pages/bye"
-import DiplomaPage from "./pages/diploma"
+// import DiplomaPage from "./pages/diploma"
 import TashakkurnomaPage from "./pages/tashakkurnoma"
 
 const App = () => {
