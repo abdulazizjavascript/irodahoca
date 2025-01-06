@@ -24,7 +24,7 @@ export default function TashakkurnomaPage() {
 
         const link = document.createElement( "a" );
         link.href = image;
-        link.download = `${name} uchun 1-sertifikat`; // File name for the downloaded certificate
+        link.download = `${name} uchun tashakkurnoma`; // File name for the downloaded certificate
         link.click();
 
         navigate( '/bye' )
