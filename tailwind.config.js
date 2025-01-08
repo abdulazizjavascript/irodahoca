@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        center: true, // Centers the container
+        padding: '15px', // Adds padding
+      },
       keyframes: {
         pulseGlow: {
           '0%, 100%': { boxShadow: '0 0 10px 0px yellow' },
@@ -20,6 +24,9 @@ export default {
         // Add a custom font family name: "bebas"
         bebas: [ '"Bebas Neue"', 'sans-serif' ],
         condensed: [ 'Roboto Condensed', 'sans-serif' ],
+        roboto: [ "Roboto", "sans-serif" ],
+        montserrat: [ "Montserrat", "sans-serif" ],
+        playfair: [ "Playfair Display", "serif" ],
       },
     },
   },

@@ -7,12 +7,14 @@ import Telegram from "./pages/telegram"
 import ByePage from "./pages/bye"
 // import DiplomaPage from "./pages/diploma"
 import TashakkurnomaPage from "./pages/tashakkurnoma"
+import VebinarPage from "./pages/vebinar"
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<HomePage />} />
+        <Route path="/vebinar" element={<VebinarPage />} />
         <Route path='/ins' element={<InstagramPhoto />} />
         <Route path='/telegram' element={<Telegram />} />
         {/* <Route path='/certificate' element={<CertificatePage />} /> */}

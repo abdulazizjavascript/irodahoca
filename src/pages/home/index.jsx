@@ -1,19 +1,17 @@
-import { Fragment } from "react"
 import Hero from "./components/hero"
-import StatsShowCase from './components/stats-show-case';
-import Plans from "./components/plan";
-import UZTURK from "./components/uzturk";
-import Irodahoca from "./components/irodahoca";
-
+import Irodahoca from "../../components/irodahoca";
+import CourseAudience from "./components/course-audience";
+import Course from "./components/course";
+import CourseProcess from "./components/course-process";
 const HomePage = () => {
   return (
-    <Fragment>
+    <div className="font-roboto">
       <Hero />
-      <StatsShowCase />
-      <Plans />
+      <CourseAudience />
+      <Course />
+      <CourseProcess />
       <Irodahoca />
-      <UZTURK />
-    </Fragment>
+    </div>
   )
 }
 
