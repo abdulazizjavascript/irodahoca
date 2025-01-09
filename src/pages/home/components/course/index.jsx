@@ -45,18 +45,16 @@ const Course = () => {
           </Card>
         </div>
 
-        <div className="mb-4 py-1 rounded-xl bg-red-600 text-center mx-auto text-white">
-          <h2 className="text-xl text-center font-bold">4 TA DARAJA</h2>
+        <div className="mb-4 text-center">
+          <h2 className="px-6 inline-block text-xl py-1 rounded-xl bg-red-600 text-center mx-auto text-white font-bold">4 TA DARAJA</h2>
         </div>
 
-        <div className="mb-10 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 relative z-10">
+        <div className="mb-10 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 relative z-10">
           {levels.map( ( level ) => (
             <div key={level.id} className="relative">
-              {/* Level Box */}
               <div className="bg-green-500 text-white p-4 rounded-xl shadow-lg">
                 <h2 className="text-xl font-bold text-center">{level.id}</h2>
               </div>
-              {/* Lessons Count */}
               <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="bg-red-600 text-white px-2 py-1 rounded-md shadow-lg whitespace-nowrap">
                   <p className="text-xs font-bold">{level.lessons}</p>
@@ -72,13 +70,15 @@ const Course = () => {
           </p>
         </div>
 
-        <div className="mb-6">
-          <a href="#" className='rounded-lg text-white py-2 block text-center bg-blue-500'>O'quv rejani ko'rish</a>
+        {/* O'quv reja */}
+        <div className="mb-6 text-center">
+          <a href="https://irodahoca.notion.site/3-OYLIK-REJA-16cc531ea474801a9348daa5547efd00?pvs=4" className='px-6 rounded-lg text-white py-2 inline-block text-center bg-blue-500'>O'quv rejani ko'rish</a>
         </div>
 
+        {/* Haftada necha kun */}
         <div className="relative z-10 mb-12">
-          <div className="mb-6 bg-red-600 text-white py-1 rounded-xl shadow-lg">
-            <h2 className="text-lg font-bold text-center">
+          <div className="mb-6 text-center">
+            <h2 className="px-6 inline-block text-lg font-bold bg-red-600 text-white py-1 rounded-xl shadow-lg">
               HAFTADA 6 KUN
             </h2>
           </div>
@@ -117,6 +117,8 @@ const Course = () => {
             </div>
           </div>
         </div>
+
+        {/* Uyga vazifa */}
         <div className="relative mb-12" >
           <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">UYGA VAZIFA</h1>
@@ -144,13 +146,15 @@ const Course = () => {
           </div>
         </div>
 
-        <div className="mb-12 bg-red-600 text-white py-2 rounded-xl shadow-lg">
-          <h2 className="text-lg font-bold text-center">
+        {/* O'quvchilar soni */}
+        <div className="mb-12 text-center">
+          <h2 className="inline-block text-lg font-bold px-6 bg-red-600 text-white py-2 rounded-xl shadow-lg">
             15 kishilik yopiq telegram guruh
           </h2>
         </div>
 
-        <div className="relative mb-12" >
+        {/* Darsliklar */}
+        <div className="relative" >
           <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">Turli xil darsliklar</h1>
           </div>

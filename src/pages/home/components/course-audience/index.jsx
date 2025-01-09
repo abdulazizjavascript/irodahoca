@@ -4,7 +4,6 @@ import Card from "../../../../components/card"
 
 const CourseAudience = () => {
   const targetAudiences = [
-    "Sertifikat olib magistr, doktarantura, bakalavrga kirmoqchi bo'lganlar uchun",
     "Maoshiga qo'shimcha ustama olmoqchi bo'lganlar uchun",
     "Qo'shimcha bir til organmoqchi bo'lganlar uchun",
     "Turkiyada oqimoqchi bo'lganlar uchun",
@@ -33,7 +32,7 @@ const CourseAudience = () => {
               key={index}
               className="bg-green-500 text-white p-3 rounded-lg shadow-lg"
             >
-              <p className="text-xs text-center">{text}</p>
+              <p className="text-sm text-center">{text}</p>
             </div>
           ) )}
         </div>

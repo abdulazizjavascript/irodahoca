@@ -6,7 +6,7 @@ const Irodahoca = () => {
       <div className="container mx-auto px-4 py-8 relative">
         <div className="space-y-4">
           <div className="text-center">
-            <h1 className="mb-3 text-3xl font-bold text-red-500">
+            <h1 className="mb-3 text-3xl font-bold bg-red-600 text-white py-3 rounded-lg">
               IRODAHOCA KIM ?
             </h1>
             <p className="text-sm font-bold uppercase tracking-wider">
@@ -29,10 +29,10 @@ const Irodahoca = () => {
                 key={index}
                 className="flex items-center gap-2 bg-green-500 p-2 rounded-lg backdrop-blur-sm border border-gray-700"
               >
-                <span className="text-xs flex items-center justify-center min-w-6 min-h-6 rounded-full bg-red-500 text-white font-bold">
+                <span className="text-sm flex items-center justify-center min-w-8 min-h-8 rounded-full bg-red-500 text-white font-bold">
                   {String( index + 1 ).padStart( 2, '0' )}
                 </span>
-                <p className="text-white text-xs">{achievement}</p>
+                <p className="text-white text-sm">{achievement}</p>
               </div>
             ) )}
           </div>
@@ -43,11 +43,20 @@ const Irodahoca = () => {
 };
 
 const achievements = [
-  "500 ga yaqin o'quvchilari ustozi",
+  "2020-yildan buyon turk tili sohasida faoliyat yuritib keladi",
+  "C1 darajali turk tili ustozi",
+  "500 ga yaqin o'quvchilar ustozi",
+  "Shu paytgacha 90% o’quvchilari sertifikatga erishishgan",
+  "Turk va turkiyalik ustozlardan ta’lim olgan",
   "UZTURK o'quv markazi asoschilaridan biri",
   "ToshDO'TAU O'FF fakulteti bitiruvchisi",
   "Turkcha maqolalar yozish bo'yicha respublika konferensiyalari g'olibi",
-  "Ko'zi ojizlarga turk tilini o'rgatish bo'yicha loyiha rahbari"
+  "Ko'zi ojizlarga turk tilini o'rgatish bo'yicha loyiha rahbari",
+  "2023-yilda turkiyalik professor qo’lida o’z malakamni ham oshirgan",
+  "2 marta turk tili bo'yicha televidineyaga taklif qilingan",
+  "O’zbekiston fanlar akademiyasi hamda ToshDO’TAUda offlayn dars bergan",
+  "Turkiya granti sohibasi",
+  "2025-yilda 100% o’quvchilarini sertifikatli qilmoqchi",
 ];
 
 export default Irodahoca
