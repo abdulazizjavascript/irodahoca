@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { Gift, Lock, SquareCheckBig } from "lucide-react"
 
 const Bonus = () => {
