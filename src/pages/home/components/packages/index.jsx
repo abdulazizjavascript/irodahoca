@@ -1,23 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { Check, Infinity } from 'lucide-react'
+import AdminBtn from '../admin-btn'
 
 export default function PricingTable() {
   return (
-    <section className="py-8">
+    <section id='plans' className="py-8">
       <div className="container">
         <h2 className="mb-6 text-center text-3xl font-bold bg-red-600 text-white py-4 rounded-xl">
           TA'RIFLAR
         </h2>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-6 grid grid-cols-1 gap-6 lg:grid-cols-4">
           {/* Basic Plan */}
           <div className="relative border-2 border-blue-400 rounded-2xl flex flex-col overflow-hidden">
             <div className="bg-blue-500 py-2">
-              <h4 className="text-center text-xl font-bold text-white">MUSTAQIL</h4>
+              <h3 className="text-center text-2xl font-bold text-white">MUSTAQIL</h3>
             </div>
             <div className="bg-blue-500 py-2 border-t border-blue-400">
-              <p className="text-center text-lg text-white">FAQAT VIDEOLAR</p>
+              <p className="text-center text-lg text-white font-bold">FAQAT VIDEOLAR</p>
             </div>
             <div className="bg-blue-500 py-2 border-t border-blue-400">
               <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: <span><Infinity /></span> </p>
@@ -46,6 +47,7 @@ export default function PricingTable() {
                     25%
                   </span>
                 </div>
+                <AdminBtn />
               </div>
             </div>
           </div>
@@ -53,10 +55,10 @@ export default function PricingTable() {
           {/* Premium Plan */}
           <div className="relative border-2 border-red-700 rounded-2xl flex flex-col overflow-hidden">
             <div className="bg-red-800 py-2">
-              <h4 className="text-center text-xl font-bold text-white">PREMIUM</h4>
+              <h3 className="text-center text-2xl font-bold text-white">PREMIUM</h3>
             </div>
             <div className="bg-red-800 py-2 border-t border-red-700">
-              <p className="text-center text-lg text-white">KURATORLIK TA'RIFI</p>
+              <p className="text-center text-lg text-white font-bold">KURATORLIK TA'RIFI</p>
             </div>
             <div className="bg-red-800 py-2 border-t border-red-700">
               <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: <span><Infinity /></span> </p>
@@ -65,7 +67,7 @@ export default function PricingTable() {
               <ul className="space-y-4">
                 {[
                   "Faqat ayollar uchun",
-                  "Kuratorlar shug'ullanadi",
+                  "Kurator shug'ullanadi",
                   "3 oy davom etadi",
                   "Umrbod videolarga ruxsat",
                   "Haftada 6 kun dars bo'ladi",
@@ -91,17 +93,64 @@ export default function PricingTable() {
                     30%
                   </span>
                 </div>
+                <AdminBtn />
+              </div>
+            </div>
+          </div>
+
+          {/* Erkak Plan */}
+          <div className="relative border-2 border-black rounded-2xl flex flex-col overflow-hidden">
+            <div className="bg-black py-2">
+              <h3 className="text-center text-2xl font-bold text-white">ERKAK</h3>
+            </div>
+            <div className="bg-black py-2 border-t border-gray-500">
+              <p className="text-center text-lg text-white font-bold">KURATORLIK TA'RIFI</p>
+            </div>
+            <div className="bg-black py-2 border-t border-gray-500">
+              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: <span><Infinity /></span> </p>
+            </div>
+            <div className="p-6 flex-1">
+              <ul className="space-y-4">
+                {[
+                  "Faqat erkaklar uchun",
+                  "4 yil turkiyaga yashab kelgan kurator shug'ullanadi",
+                  "3 oy davom etadi",
+                  "Umrbod videolarga ruxsat",
+                  "Haftada 6 kun dars bo'ladi",
+                  "3 kun Irodahoca videolar",
+                  "3 kun kurator jonli dars",
+                  "15 kishilik telegram guruh",
+                  "Katta bitiruv oqshomi",
+                  "Sertifikat bilan taqdirlanish",
+                  "Quron xatm bo'ladi",
+                ].map( ( feature ) => (
+                  <li key={feature} className="flex items-start">
+                    <Check className="h-6 w-6 flex-shrink-0 text-red-700" />
+                    <span className="ml-3 text-base">{feature}</span>
+                  </li>
+                ) )}
+              </ul>
+              <div className="mt-8">
+                <div className="flex flex-col items-center justify-center">
+                  <span className="line-through text-gray-500">1.597.000 so'm</span>
+                  <span className="line-through text-gray-500">1.397.000 so'm</span>
+                  <span className="text-2xl font-bold text-red-600">1.197.000 so'm</span>
+                  <span className="mt-2 inline-flex items-center justify-center gap-2 rounded-md text-xl bg-red-600 px-3 py-1 font-semibold text-white">
+                    30%
+                  </span>
+                </div>
+                <AdminBtn />
               </div>
             </div>
           </div>
 
           {/* VIP Plan */}
           <div className="relative border-2 border-yellow-300 rounded-2xl flex flex-col overflow-hidden">
-            <div className="bg-yellow-400 text-white  py-2">
-              <h4 className="text-center text-xl font-bold">VIP</h4>
+            <div className="bg-yellow-400 text-white py-2">
+              <h3 className="text-center text-2xl font-bold">VIP</h3>
             </div>
-            <div className="bg-yellow-400 text-white py-2 border-t border-yellow-300">
-              <p className="text-center text-lg">SHOGIRLIK TA'RIFI</p>
+            <div className="bg-yellow-400 py-2 border-t border-yellow-300">
+              <p className="text-center text-lg text-white font-bold">SHOGIRLIK TA'RIFI</p>
             </div>
             <div className="bg-yellow-400 py-2 border-t border-yellow-300">
               <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 33 / 40</p>
@@ -140,11 +189,12 @@ export default function PricingTable() {
                     25%
                   </span>
                 </div>
+                <AdminBtn />
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
   )

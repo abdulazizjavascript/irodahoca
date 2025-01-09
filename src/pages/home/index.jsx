@@ -7,19 +7,29 @@ import CourseEnd from "./components/course-end";
 import Guarantee from "./components/guarantee";
 import PricingTable from "./components/packages";
 import CountdownTimer from "./components/timer";
+import Bonus from "./components/bonus";
+import FAQ from "./components/faq";
+import Curators from "./components/curators";
+import Students from "./components/students";
+import Admin from "./components/admin";
 
 const HomePage = () => {
   return (
     <div className="font-roboto">
       <Hero />
       <CourseAudience />
+      <Irodahoca />
       <Course />
       <CourseProcess />
-      <Irodahoca />
       <CourseEnd />
       <Guarantee />
+      <Bonus />
       <PricingTable />
+      <Curators />
       <CountdownTimer />
+      <Admin />
+      <Students />
+      <FAQ />
     </div>
   )
 }

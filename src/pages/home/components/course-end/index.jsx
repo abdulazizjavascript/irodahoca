@@ -1,5 +1,3 @@
-import { LazyLoadComponent } from "react-lazy-load-image-component";
-
 const CourseEnd = () => {
   const events = [
     {

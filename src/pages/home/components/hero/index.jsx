@@ -8,17 +8,20 @@ import irodahoca from '../../../../assets/irodahoca.png'
 export default function Page() {
 
   return (
-    <div className="bg-pink-100">
+    <section className="bg-pink-100">
       <div className="container pt-4 pb-8 text-center">
+        <div className="inline-block rounded-full border border-black border-dashed px-8 py-2 mb-2">
+          Start: 15-yanvar
+        </div>
         <h3 className="text-md font-bold mb-4">
           Turk tili bo'yicha ekspert IRODAHOCA va UZTURK o'quv markazi tomonidan ishlab chiqilgan onlayn
         </h3>
 
-        <h1 className="text-3xl font-bold mb-3"><span className='text-green-600'>"100%</span> <span className='text-red-600'>SERTIFIKAT"</span></h1>
+        <h1 className="flex justify-center text-3xl font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>100%</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>SERTIFIKAT</span></h1>
 
         <div className="max-w-3xl mx-auto mb-8">
           <h2 className="text-md font-bold mb-4">
-            nomli turk tili kurs orqali 3 oy ichida turk tilidan sertifikatli bo'ling !
+            nomli turk tili kurs orqali 3 oy ichida turk tilini o'rganing va sertifikatli bo'ling !
           </h2>
         </div>
 
@@ -31,16 +34,13 @@ export default function Page() {
             src={irodahoca} />
 
           <div className="flex items-center justify-center gap-4">
-            <a href="#course" className="flex -mt-14 z-10 bg-red-600 text-white px-12 py-2 rounded-full text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
-              <ArrowDown className="w-6 h-6 text-white" />
-              <ArrowDown className="w-6 h-6 text-white" />
-              <ArrowDown className="w-6 h-6 text-white" />
+            <a href="#plans" className="flex -mt-14 z-10 bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
+              KURSGA YOZILISH
             </a>
           </div>
-          <p className="text-xl font-bold text-red-600">BATAFSIL</p>
           <span className="text-sm">Sizni sertifikatli qilmaguncha qo'ymaymiz</span>
         </div>
       </div>
-    </div> )
+    </section> )
 }
 

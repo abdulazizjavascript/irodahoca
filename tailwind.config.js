@@ -8,6 +8,9 @@ export default {
   theme: {
     extend: {
       container: {
+        maxWidth: {
+          lg: 1200,
+        },
         center: true, // Centers the container
         padding: '15px', // Adds padding
       },

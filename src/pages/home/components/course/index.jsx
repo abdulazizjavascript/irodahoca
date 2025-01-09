@@ -37,7 +37,7 @@ const Course = () => {
   ]
 
   return (
-    <section className="bg-pink-200 py-16">
+    <section className="py-16">
       <div className="container ">
         <div className="mb-6">
           <Card title="KURS HAQIDA">
@@ -123,7 +123,7 @@ const Course = () => {
           <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">UYGA VAZIFA</h1>
           </div>
-          <div className="max-w-[500px] mx-auto bg-green-500 rounded-3xl py-6 px-2 text-center text-white shadow-xl" >
+          <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
             <p className="text-sm">Uyga vazifalar ustozlar tomonidan tekshiriladi va statistika qilib boriladi.</p>
           </div>
         </div>
@@ -132,7 +132,7 @@ const Course = () => {
           <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">VAQTLARI</h1>
           </div>
-          <div className="max-w-[500px] mx-auto bg-green-500 rounded-3xl py-6 px-2 text-center text-white shadow-xl" >
+          <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
             <p className="text-sm">Darslar uzog'i 1.5 soat davom etadi.</p>
             <p className="text-sm">Kechki vaqtga to'g'ri keladi.</p>
           </div>
@@ -158,7 +158,7 @@ const Course = () => {
           <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">Turli xil darsliklar</h1>
           </div>
-          <div className="max-w-[500px] mx-auto bg-green-500 rounded-3xl py-6 px-2 text-center text-white shadow-xl" >
+          <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
             <div className="flex text-sm items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>İstanbul yabancilar için türkçe ders kitabi</p> </div>
             <div className="flex text-sm items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>Yedi iklim türkçe ders kitaplari</p> </div>
           </div>

@@ -1,6 +1,6 @@
 const Guarantee = () => {
   return (
-    <section className="bg-pink-200 py-16">
+    <section className="bg-black py-16">
       <div className="container">
         {/* <img className="w-full mb-12" src="https://static.vecteezy.com/system/resources/previews/024/382/882/non_2x/satisfaction-guaranteed-label-icon-symbol-golden-red-white-design-transparent-background-free-png.png" alt="Guaranteed" /> */}
         <div className="relative" >

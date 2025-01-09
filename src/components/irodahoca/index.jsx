@@ -6,6 +6,9 @@ const Irodahoca = () => {
       <div className="container mx-auto px-4 py-8 relative">
         <div className="space-y-4">
           <div className="text-center">
+            <h1 className="mb-3 text-3xl font-bold text-black">
+              KURS MUALLIFI
+            </h1>
             <h1 className="mb-3 text-3xl font-bold bg-red-600 text-white py-3 rounded-lg">
               IRODAHOCA KIM ?
             </h1>
@@ -52,7 +55,7 @@ const achievements = [
   "ToshDO'TAU O'FF fakulteti bitiruvchisi",
   "Turkcha maqolalar yozish bo'yicha respublika konferensiyalari g'olibi",
   "Ko'zi ojizlarga turk tilini o'rgatish bo'yicha loyiha rahbari",
-  "2023-yilda turkiyalik professor qo’lida o’z malakamni ham oshirgan",
+  "2023-yilda turkiyalik professor qo’lida o’z malakasini ham oshirgan",
   "2 marta turk tili bo'yicha televidineyaga taklif qilingan",
   "O’zbekiston fanlar akademiyasi hamda ToshDO’TAUda offlayn dars bergan",
   "Turkiya granti sohibasi",
