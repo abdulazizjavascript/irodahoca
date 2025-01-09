@@ -9,7 +9,7 @@ const faqData = [
   },
   {
     question: "Bo'lib to'lasa bo'ladi ?",
-    answer: "Bo'ladi, narxlardagi 2-chizilgan summani 4 martalik bo'lib to'lashingiz mumkin."
+    answer: "Bo'ladi, narxlardagi 2-chizilgan summani 4 martalik bo'lib to'lashingiz mumkin. Bu qaror hali tasdiqlanmadi."
   },
   {
     question: "Ertalabga ham guruhlar bormi ?",

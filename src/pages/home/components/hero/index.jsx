@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { ArrowDown } from 'lucide-react'
 
 import irodahoca from '../../../../assets/irodahoca.png'
 
