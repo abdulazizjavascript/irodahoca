@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 
 const faqData = [
@@ -42,6 +43,10 @@ function AccordionItem( { question, answer, isOpen, onClick } ) {
       )}
     </div>
   )
+}
+
+AccordionItem.propTypes = {
+  question: PropTypes.string, answer: PropTypes.string, isOpen: PropTypes.bool, onClick: PropTypes.func,
 }
 
 export default function FAQ() {

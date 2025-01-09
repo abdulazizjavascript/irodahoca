@@ -12,6 +12,7 @@ import FAQ from "./components/faq";
 import Curators from "./components/curators";
 import Students from "./components/students";
 import Admin from "./components/admin";
+import SampleLessons from "./components/sample-lessons";
 
 const HomePage = () => {
   return (
@@ -29,6 +30,7 @@ const HomePage = () => {
       <CountdownTimer />
       <Admin />
       <Students />
+      <SampleLessons />
       <FAQ />
     </div>
   )

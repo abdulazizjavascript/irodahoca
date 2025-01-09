@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import PropTypes from "prop-types"
+
 const Card = ( { children, title, price } ) => {
   return (
     <div className="relative" >
@@ -16,6 +18,10 @@ const Card = ( { children, title, price } ) => {
       </div> : null}
     </div>
   )
+}
+
+Card.propTypes = {
+  children: PropTypes.node, title: PropTypes.string, price: PropTypes.number,
 }
 
 export default Card
