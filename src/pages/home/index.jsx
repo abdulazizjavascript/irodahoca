@@ -25,12 +25,12 @@ const HomePage = () => {
       <CourseEnd />
       <Guarantee />
       <Bonus />
+      <SampleLessons />
       <PricingTable />
       <Curators />
       <CountdownTimer />
       <Admin />
       <Students />
-      <SampleLessons />
       <FAQ />
     </div>
   )

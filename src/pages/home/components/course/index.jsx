@@ -41,7 +41,7 @@ const Course = () => {
       <div className="container ">
         <div className="mb-6">
           <Card title="KURS HAQIDA">
-            <p className="text-sm">Kurs onlayn bo'lib 3 oy davom etadi.</p>
+            <p className="text-sm">Kurs onlayn bo'lib 3 oy davom etadi. 3 oy davomida 4 ta daraja tugatiladi.</p>
           </Card>
         </div>
 

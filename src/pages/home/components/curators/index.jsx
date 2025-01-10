@@ -1,3 +1,5 @@
+import AdminBtn from "../admin-btn"
+
 const curators = [
   {
     id: 1,
@@ -68,6 +70,7 @@ export function Curators() {
             </div>
           ) )}
         </div>
+        <AdminBtn title="Kursga yozilish" />
       </div>
     </section>
   )

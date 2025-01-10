@@ -14,7 +14,7 @@ const CourseAudience = () => {
   ]
 
   return (
-    <section>
+    <section id='course-audience'>
       <div className="container py-16">
         <div className="mb-6">
           <Card title="100% SERTIFIKAT">

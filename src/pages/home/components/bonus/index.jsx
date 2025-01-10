@@ -14,7 +14,7 @@ const Bonus = () => {
     <section className="pt-16 pb-8 bg-pink-200">
       <div className="container ">
         <h1 className="flex gap-2 items-center justify-center mb-12 font-bold bg-red-600 text-3xl py-3 text-white text-center rounded-xl">
-          <Gift className="text-white w-8 h-8" /> <span>BONUS</span>
+          <Gift className="text-white w-8 h-8" /> <span>BONUS</span> <Gift className="text-white w-8 h-8" />
         </h1>
         <div className="relative mb-12" >
           <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
@@ -65,15 +65,15 @@ const Bonus = () => {
             <p className="text-sm">3 kun bo'lib o'tgan O'zbekistondagi eng katta SERTIFIKAT SIRLARI vebinarining to'liq zapislari</p>
           </div>
         </div>
-        <div className="text-center relative mb-12">
+        <div className="max-w-[500px] mx-auto text-center relative mb-12">
           <img className="rounded-xl w-full" src="/1-kun.jpg" alt="1-kun" />
           <a className="absolute left-1/2 bottom-0 transform translate-y-1/2 -translate-x-1/2 inline-block -mt-6 py-3 px-6 bg-red-600 text-white rounded-xl" href="https://www.youtube.com/live/kPSenm0Us5U">Ko'rish</a>
         </div>
-        <div className="text-center relative mb-12">
+        <div className="max-w-[500px] mx-auto text-center relative mb-12">
           <img className="rounded-xl w-full" src="/2-kun.jpg" alt="2-kun" />
           <button disabled className="disabled:bg-red-400 flex gap-1 absolute left-1/2 bottom-0 transform translate-y-1/2 -translate-x-1/2 -mt-6 py-3 px-6 bg-red-600 text-white rounded-xl" ><Lock /> <span>Ko'rish</span></button>
         </div>
-        <div className="text-center relative mb-12">
+        <div className="max-w-[500px] mx-auto text-center relative mb-12">
           <img className="rounded-xl w-full" src="/3-kun.jpg" alt="3-kun" />
           <button disabled className="disabled:bg-red-400 flex gap-1 absolute left-1/2 bottom-0 transform translate-y-1/2 -translate-x-1/2 -mt-6 py-3 px-6 bg-red-600 text-white rounded-xl" ><Lock /> <span>Ko'rish</span></button>
         </div>

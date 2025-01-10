@@ -114,6 +114,7 @@ export default function Students() {
           <p className="text-gray-600 mb-3">Yuqoridagilar 10% ham emas.</p>
           <a className="bg-blue-500 inline-block py-3 px-6 rounded-xl text-white" href="https://t.me/irodahoca_natijalar">Ko'proq natijalarni ko'rish</a>
         </div>
+        
       </div>
     </section>
   )
