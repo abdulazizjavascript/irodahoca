@@ -41,7 +41,7 @@ const Course = () => {
       <div className="container ">
         <div className="mb-6">
           <Card title="KURS HAQIDA">
-            <p className="text-sm">Kurs onlayn bo'lib 3 oy davom etadi. 3 oy davomida 4 ta daraja tugatiladi.</p>
+            <p>Kurs onlayn bo'lib 3 oy davom etadi. 3 oy davomida 4 ta daraja tugatiladi.</p>
           </Card>
         </div>
 
@@ -78,7 +78,7 @@ const Course = () => {
         {/* Haftada necha kun */}
         <div className="relative z-10 mb-12">
           <div className="mb-6 text-center">
-            <h2 className="px-6 inline-block text-lg font-bold bg-red-600 text-white py-1 rounded-xl shadow-lg">
+            <h2 className="px-6 inline-block text-xl font-bold bg-red-600 text-white py-2 rounded-xl shadow-lg">
               HAFTADA 6 KUN
             </h2>
           </div>
@@ -105,7 +105,7 @@ const Course = () => {
               <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">VIDEO DARSLAR</h1>
             </div>
             <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-white shadow-xl space-y-1" >
-              {videoLessons.map( item => <div key={item} className="flex text-sm items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
+              {videoLessons.map( item => <div key={item} className="flex  items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
             </div>
           </div>
           <div className="relative mb-6" >
@@ -113,7 +113,7 @@ const Course = () => {
               <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">JONLI DARSLAR</h1>
             </div>
             <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-white shadow-xl space-y-1" >
-              {liveLessons.map( item => <div key={item} className="flex text-sm items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
+              {liveLessons.map( item => <div key={item} className="flex  items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ const Course = () => {
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">UYGA VAZIFA</h1>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            <p className="text-sm">Uyga vazifalar ustozlar tomonidan tekshiriladi va statistika qilib boriladi.</p>
+            <p className="">Uyga vazifalar ustozlar tomonidan tekshiriladi va statistika qilib boriladi.</p>
           </div>
         </div>
 
@@ -133,8 +133,8 @@ const Course = () => {
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">VAQTLARI</h1>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            <p className="text-sm">Darslar uzog'i 1.5 soat davom etadi.</p>
-            <p className="text-sm">Kechki vaqtga to'g'ri keladi.</p>
+            <p className="">Darslar uzog'i 1.5 soat davom etadi.</p>
+            <p className="">Kechki vaqtga to'g'ri keladi.</p>
           </div>
           <div className="absolute flex gap-6 left-1/2 -translate-x-1/2 transform -translate-y-1/2">
             <div className="bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
@@ -159,8 +159,8 @@ const Course = () => {
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">Turli xil darsliklar</h1>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            <div className="flex text-sm items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>İstanbul yabancilar için türkçe ders kitabi</p> </div>
-            <div className="flex text-sm items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>Yedi iklim türkçe ders kitaplari</p> </div>
+            <div className="flex  items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>İstanbul yabancilar için türkçe ders kitabi</p> </div>
+            <div className="flex  items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>Yedi iklim türkçe ders kitaplari</p> </div>
           </div>
         </div>
       </div>

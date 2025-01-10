@@ -2,6 +2,7 @@
 
 import PropTypes from 'prop-types'
 import { useState } from 'react'
+import AdminBtn from '../admin-btn'
 
 const faqData = [
   {
@@ -10,7 +11,7 @@ const faqData = [
   },
   {
     question: "Bo'lib to'lasa bo'ladi ?",
-    answer: "Bo'ladi, narxlardagi 2-chizilgan summani 4 martalik bo'lib to'lashingiz mumkin. Bu qaror hali tasdiqlanmadi."
+    answer: "Bo'ladi, narxlardagi 2-chizilgan summani 3 martalik bo'lib to'lashingiz mumkin."
   },
   {
     question: "Ertalabga ham guruhlar bormi ?",
@@ -57,7 +58,7 @@ export default function FAQ() {
   }
 
   return (
-    <div className="w-full max-w-3xl mx-auto p-6 space-y-8">
+    <div className="w-full max-w-3xl mx-auto py-12 px-6 space-y-8">
       <div className="text-center space-y-2">
         <svg
           className="w-12 h-12 mx-auto text-red-600"
@@ -76,7 +77,7 @@ export default function FAQ() {
         <h1 className="text-xl lg:text-3xl font-bold tracking-tight py-3 px-6 bg-red-600 text-white rounded-xl uppercase">Eng ko'p so'raladigan savollar</h1>
       </div>
 
-      <div>
+      <div className='mb-12'>
         {faqData.map( ( faq, index ) => (
           <AccordionItem
             key={index}
@@ -87,6 +88,8 @@ export default function FAQ() {
           />
         ) )}
       </div>
+
+      <AdminBtn title="Kursga yozilish" />
     </div>
   )
 }

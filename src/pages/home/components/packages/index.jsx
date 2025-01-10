@@ -40,6 +40,7 @@ export default function PricingTable() {
               </ul>
               <div className="mt-8">
                 <div className="flex flex-col items-center justify-center">
+                  <span className="text-red-600">JAMI TO'LOV</span>
                   <span className="line-through text-gray-500">1.197.000 so'm</span>
                   <span className="line-through text-gray-500">1.047.000 so'm</span>
                   <span className="text-2xl font-bold text-red-600">897.000 so'm</span>
@@ -86,6 +87,7 @@ export default function PricingTable() {
               </ul>
               <div className="mt-8">
                 <div className="flex flex-col items-center justify-center">
+                  <span className="text-red-600">JAMI TO'LOV</span>
                   <span className="line-through text-gray-500">1.397.000 so'm</span>
                   <span className="line-through text-gray-500">1.197.000 so'm</span>
                   <span className="text-2xl font-bold text-red-600">997.000 so'm</span>
@@ -132,6 +134,7 @@ export default function PricingTable() {
               </ul>
               <div className="mt-8">
                 <div className="flex flex-col items-center justify-center">
+                  <span className="text-red-600">JAMI TO'LOV</span>
                   <span className="line-through text-gray-500">1.597.000 so'm</span>
                   <span className="line-through text-gray-500">1.397.000 so'm</span>
                   <span className="text-2xl font-bold text-red-600">1.197.000 so'm</span>
@@ -182,6 +185,7 @@ export default function PricingTable() {
               </ul>
               <div className="mt-8">
                 <div className="flex flex-col items-center justify-center">
+                  <span className="text-red-600">JAMI TO'LOV</span>
                   <span className="line-through text-gray-500">1.997.000 so'm</span>
                   <span className="line-through text-gray-500">1.747.000 so'm</span>
                   <span className="text-2xl font-bold text-red-600">1.497.000 so'm</span>

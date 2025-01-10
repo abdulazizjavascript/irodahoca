@@ -12,7 +12,7 @@ export default function CountdownTimer() {
 
   useEffect( () => {
     // Set target date in Tashkent timezone (UTC+5)
-    const targetDate = new Date( '2025-01-11T00:00:00+05:00' ).getTime()
+    const targetDate = new Date( '2025-01-15T00:00:00+05:00' ).getTime()
 
     const timer = setInterval( () => {
       // Get current time in Tashkent

@@ -21,7 +21,7 @@ const Bonus = () => {
             <h3 className="text-2xl font-bold tracking-wider whitespace-nowrap">FOUNDATION DARSLARI</h3>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            {events.map( item => <div key={item} className="flex text-sm items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
+            {events.map( item => <div key={item} className="flex  items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
           </div>
         </div>
 
@@ -30,7 +30,7 @@ const Bonus = () => {
             <h3 className="text-lg font-bold tracking-wider whitespace-nowrap">MOTIVATION DARSI</h3>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            <p className="text-sm">Turk tili o’rganuvchilari uchun kerakli maslahat va tajribalar berib o’tiladi.</p>
+            <p>Turk tili o’rganuvchilari uchun kerakli maslahat va tajribalar berib o’tiladi.</p>
           </div>
         </div>
         <div className="relative mb-12" >
@@ -38,7 +38,7 @@ const Bonus = () => {
             <h3 className="text-lg font-bold tracking-wider whitespace-nowrap">ILM OLISH SIRLARI</h3>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            <p className="text-sm">Ilm olishga doir tajriba va kitoblarga o’qiganlarimiz ulashilinadi.</p>
+            <p>Ilm olishga doir tajriba va kitoblarga o’qiganlarimiz ulashilinadi.</p>
           </div>
         </div>
         <div className="relative mb-12" >
@@ -46,7 +46,7 @@ const Bonus = () => {
             <h3 className="text-lg text-center font-bold tracking-wider whitespace-nowrap">MAQSAD QO’YISH</h3>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            <p className="text-sm">Qanday qilib maqsad qo’yish va shaxsiy rivojlanish bo’yicha tajriba va tavsiyalarimizni ulashamiz.</p>
+            <p>Qanday qilib maqsad qo’yish va shaxsiy rivojlanish bo’yicha tajriba va tavsiyalarimizni ulashamiz.</p>
           </div>
         </div>
         <div className="relative mb-12" >
@@ -54,7 +54,7 @@ const Bonus = () => {
             <h3 className="text-lg text-center font-bold tracking-wider whitespace-nowrap">O’ZBEK TILI GRAMMATIKASI</h3>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            <p className="text-sm">Darslar soni 3 ta bo’lib, turk tiliga kirishingiz oldin kerak bo’ladigan o’zbek tili grammatikasi o’rgatiladi.</p>
+            <p>Darslar soni 3 ta bo’lib, turk tiliga kirishingiz oldin kerak bo’ladigan o’zbek tili grammatikasi o’rgatiladi.</p>
           </div>
         </div>
         <div className="relative mb-12" >
@@ -62,7 +62,7 @@ const Bonus = () => {
             <h2 className="text-2xl text-center font-bold tracking-wider whitespace-nowrap">SERTIFIKAT SIRLARI</h2>
           </div>
           <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            <p className="text-sm">3 kun bo'lib o'tgan O'zbekistondagi eng katta SERTIFIKAT SIRLARI vebinarining to'liq zapislari</p>
+            <p>3 kun bo'lib o'tgan O'zbekistondagi eng katta SERTIFIKAT SIRLARI vebinarining to'liq zapislari beriladi.</p>
           </div>
         </div>
         <div className="max-w-[500px] mx-auto text-center relative mb-12">

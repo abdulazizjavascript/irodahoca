@@ -37,7 +37,10 @@ export default function Page() {
               BATAFSIL BILISH
             </a>
           </div>
-          <span className="text-sm">Sizni sertifikatli qilmaguncha qo'ymaymiz</span>
+          <div className="text-sm">
+            <p>Kursimiz haqida batafsil tanishib chiqing.</p>
+            <p>Va o'zingizga qulay ta'rifni tanlang.</p>
+          </div>
         </div>
       </div>
     </section> )

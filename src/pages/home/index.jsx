@@ -13,6 +13,7 @@ import Curators from "./components/curators";
 import Students from "./components/students";
 import Admin from "./components/admin";
 import SampleLessons from "./components/sample-lessons";
+import UZTURK from './../../components/uzturk/index';
 
 const HomePage = () => {
   return (
@@ -32,6 +33,7 @@ const HomePage = () => {
       <Admin />
       <Students />
       <FAQ />
+      <UZTURK />
     </div>
   )
 }
