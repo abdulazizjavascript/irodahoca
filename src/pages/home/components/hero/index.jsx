@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <section className="bg-pink-100">
       <div className="container pt-4 pb-8 text-center">
-        <div className="inline-block rounded-full border border-black border-dashed px-8 py-2 mb-2">
+        <div className="inline-block rounded-xl text-xl bg-black text-yellow-500 px-8 py-2 mb-2">
           Start: 15-yanvar
         </div>
         <h3 className="text-md font-bold mb-4">

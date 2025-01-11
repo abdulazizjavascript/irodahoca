@@ -62,7 +62,7 @@ export default function PricingTable() {
               <p className="text-center text-lg text-white font-bold">KURATORLIK TA'RIFI</p>
             </div>
             <div className="bg-red-800 py-2 border-t border-red-700">
-              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: <span><Infinity /></span> </p>
+              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 40 / 60 </p>
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
@@ -109,7 +109,7 @@ export default function PricingTable() {
               <p className="text-center text-lg text-white font-bold">KURATORLIK TA'RIFI</p>
             </div>
             <div className="bg-black py-2 border-t border-gray-500">
-              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: <span><Infinity /></span> </p>
+              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 10 / 30 </p>
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
@@ -127,7 +127,7 @@ export default function PricingTable() {
                   "Quron xatm bo'ladi",
                 ].map( ( feature ) => (
                   <li key={feature} className="flex items-start">
-                    <Check className="h-6 w-6 flex-shrink-0 text-red-700" />
+                    <Check className="h-6 w-6 flex-shrink-0 text-black" />
                     <span className="ml-3 text-base">{feature}</span>
                   </li>
                 ) )}
@@ -156,7 +156,7 @@ export default function PricingTable() {
               <p className="text-center text-lg text-white font-bold">SHOGIRLIK TA'RIFI</p>
             </div>
             <div className="bg-yellow-400 py-2 border-t border-yellow-300">
-              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 33 / 40</p>
+              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 36 / 40</p>
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
