@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { Gift, Lock, SquareCheckBig } from "lucide-react"
+import { Lock, SquareCheckBig } from "lucide-react"
+import Card from "../../../../components/card"
+import PlansBtn from "../plans-btn"
 
 const Bonus = () => {
 
@@ -14,15 +16,12 @@ const Bonus = () => {
     <section className="pt-16 pb-8 bg-pink-200">
       <div className="container ">
         <h1 className="flex gap-2 items-center justify-center mb-12 font-bold bg-red-600 text-3xl py-3 text-white text-center rounded-xl">
-          <Gift className="text-white w-8 h-8" /> <span>BONUS</span> <Gift className="text-white w-8 h-8" />
+          <span>1 MLNLIK BONUSLAR</span>
         </h1>
-        <div className="relative mb-12" >
-          <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold tracking-wider whitespace-nowrap">FOUNDATION DARSLARI</h3>
-          </div>
-          <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
-            {events.map( item => <div key={item} className="flex  items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
-          </div>
+        <div className="mb-12">
+          <Card title="FOUNDATION DARSLARI" price='500.000'>
+            {events.map( item => <div key={item} className="flex items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
+          </Card>
         </div>
 
         <div className="relative mb-12" >
@@ -57,13 +56,10 @@ const Bonus = () => {
             <p>Darslar soni 3 ta bo’lib, turk tiliga kirishingiz oldin kerak bo’ladigan o’zbek tili grammatikasi o’rgatiladi.</p>
           </div>
         </div>
-        <div className="relative mb-12" >
-          <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
-            <h2 className="text-2xl text-center font-bold tracking-wider whitespace-nowrap">SERTIFIKAT SIRLARI</h2>
-          </div>
-          <div className="max-w-[500px] mx-auto bg-green-500 rounded-xl py-6 px-2 text-center text-white shadow-xl" >
+        <div className="mb-12">
+          <Card title="SERTIFIKAT SIRLARI" price='500.000'>
             <p>3 kun bo'lib o'tgan O'zbekistondagi eng katta SERTIFIKAT SIRLARI vebinarining to'liq zapislari beriladi.</p>
-          </div>
+          </Card>
         </div>
         <div className="max-w-[500px] mx-auto text-center relative mb-12">
           <img className="rounded-xl w-full" src="/1-kun.jpg" alt="1-kun" />
@@ -77,6 +73,8 @@ const Bonus = () => {
           <img className="rounded-xl w-full" src="/3-kun.jpg" alt="3-kun" />
           <button disabled className="disabled:bg-red-400 flex gap-1 absolute left-1/2 bottom-0 transform translate-y-1/2 -translate-x-1/2 -mt-6 py-3 px-6 bg-red-600 text-white rounded-xl" ><Lock /> <span>Ko'rish</span></button>
         </div>
+        <PlansBtn title="Bonuslarga ega bo'lish"/>
+
       </div>
     </section>
   )

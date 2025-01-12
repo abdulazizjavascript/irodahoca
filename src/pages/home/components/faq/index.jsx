@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types'
 import { useState } from 'react'
-import AdminBtn from '../admin-btn'
+import PlansBtn from '../plans-btn'
 
 const faqData = [
   {
@@ -89,7 +89,8 @@ export default function FAQ() {
         ) )}
       </div>
 
-      <AdminBtn title="Kursga yozilish" />
+      <PlansBtn />
+
     </div>
   )
 }

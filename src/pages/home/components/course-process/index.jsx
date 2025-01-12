@@ -1,5 +1,6 @@
 import { SquareCheckBig } from "lucide-react"
 import Card from "../../../../components/card"
+import PlansBtn from "../plans-btn"
 
 const CourseProcess = () => {
 
@@ -50,6 +51,8 @@ const CourseProcess = () => {
             <p className="">O’zingizni imtihonga kirishdan oldin sinab ko’rishingiz uchun mok imtihonlar tashkil qilinib turiladi. B1 darajadan keyin.</p>
           </div>
         </div>
+
+        <PlansBtn />
 
       </div>
     </section>

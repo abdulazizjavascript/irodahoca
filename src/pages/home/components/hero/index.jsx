@@ -33,13 +33,12 @@ export default function Page() {
             src={irodahoca} />
 
           <div className="flex items-center justify-center gap-4">
-            <a href="#course-audience" className="flex -mt-14 z-10 bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
-              BATAFSIL BILISH
+            <a href="#plans" className="flex -mt-14 z-10 font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
+              KURSGA YOZILISH
             </a>
           </div>
           <div className="text-sm">
-            <p>Kursimiz haqida batafsil tanishib chiqing.</p>
-            <p>Va o'zingizga qulay ta'rifni tanlang.</p>
+            <p>Sizni sertifikatli qilmaguncha qo'ymaymiz !</p>
           </div>
         </div>
       </div>

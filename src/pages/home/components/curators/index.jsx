@@ -1,4 +1,4 @@
-import AdminBtn from "../admin-btn"
+import PlansBtn from "../plans-btn"
 
 const curators = [
   {
@@ -70,7 +70,8 @@ export function Curators() {
             </div>
           ) )}
         </div>
-        <AdminBtn title="Kursga yozilish" />
+        <PlansBtn />
+
       </div>
     </section>
   )

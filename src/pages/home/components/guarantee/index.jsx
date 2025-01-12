@@ -1,3 +1,5 @@
+import PlansBtn from "../plans-btn"
+
 const Guarantee = () => {
   return (
     <section className="bg-black py-16">
@@ -11,6 +13,7 @@ const Guarantee = () => {
             <p className="text-lg">Kurslarimizni muvaqqiyatli tugatib, sertifikat ololmasangiz, to’lovingiz 100% qaytariladi yoki qayta bepulga o’qishingiz mumkin bo’ladi.</p>
           </div>
         </div>
+        <PlansBtn />
       </div>
     </section>
   )

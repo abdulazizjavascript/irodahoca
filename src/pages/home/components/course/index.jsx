@@ -2,6 +2,7 @@
 
 import { SquareCheckBig } from "lucide-react"
 import Card from "../../../../components/card"
+import PlansBtn from "../plans-btn"
 
 const Course = () => {
   const levels = [
@@ -163,6 +164,8 @@ const Course = () => {
             <div className="flex  items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>Yedi iklim türkçe ders kitaplari</p> </div>
           </div>
         </div>
+
+        <PlansBtn />
       </div>
     </section>
   )
