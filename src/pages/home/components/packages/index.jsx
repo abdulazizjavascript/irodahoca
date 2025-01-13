@@ -4,6 +4,69 @@ import { Check, Infinity } from 'lucide-react'
 import AdminBtn from '../admin-btn'
 
 export default function PricingTable() {
+  const basicPlan = [
+    "3 oy davom etadi",
+    "Umrbod videolarga ruxsat",
+    "Katta bitiruv oqshomi",
+    "Sertifikat bilan taqdirlanish",
+    "Quron xatm bo'ladi",
+  ]
+  const premiumPlan = [
+    "Faqat ayollar uchun",
+    "Kurator shug'ullanadi",
+    "3 oy davom etadi",
+    "Haftada 6 kun dars bo'ladi",
+    "3 kun Irodahoca videolar",
+    "Umrbod videolarga ruxsat",
+    "3 kun kurator jonli dars",
+    "Savol-javob qilinadi",
+    "Lug'at so'raladi",
+    "4 bosqich ustida ishlanadi",
+    "Uyga vazifalar tekshiriladi",
+    "Imtihonlar, musobaqalar bo'ladi",
+    "15 kishilik telegram guruh",
+    "Katta bitiruv oqshomi",
+    "Sertifikat bilan taqdirlanish",
+    "Quron xatm bo'ladi",
+  ]
+  const erkakPlan = [
+    "Faqat erkaklar uchun",
+    "4 yil turkiyaga o'qib kelgan kurator shug'ullanadi",
+    "3 oy davom etadi",
+    "Haftada 6 kun dars bo'ladi",
+    "3 kun Irodahoca videolar",
+    "Umrbod videolarga ruxsat",
+    "3 kun kurator jonli dars",
+    "Savol-javob qilinadi",
+    "Lug'at so'raladi",
+    "4 bosqich ustida ishlanadi",
+    "Uyga vazifalar tekshiriladi",
+    "Imtihonlar, musobaqalar bo'ladi",
+    "15 kishilik telegram guruh",
+    "Katta bitiruv oqshomi",
+    "Sertifikat bilan taqdirlanish",
+    "Quron xatm bo'ladi",
+  ]
+  const vipPlan = [
+    "Faqat ayollar uchun",
+    "Irodahoca shug'ullanadi",
+    "3 oy davom etadi",
+    "Haftada 6 kun dars bo'ladi",
+    "3 kun Irodahoca videolar",
+    "Umrbod videolarga ruxsat",
+    "3 kun Irodahoca jonli dars",
+    "Savol-javob qilinadi",
+    "Lug'at so'raladi",
+    "4 bosqich ustida ishlanadi",
+    "Uyga vazifalar tekshiriladi",
+    "Imtihonlar, musobaqalar bo'ladi",
+    "20 kishilik telegram guruh",
+    "Katta bitiruv oqshomi",
+    "Sertifikat bilan taqdirlanish",
+    "Quron xatm bo'ladi",
+    "Yordamchi ustoz xizmati",
+    "Ustoz bo'lish imkoniyati",
+  ]
   return (
     <section id='plans' className="py-8">
       <div className="container">
@@ -25,13 +88,7 @@ export default function PricingTable() {
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
-                {[
-                  "3 oy davom etadi",
-                  "Umrbod videolarga ruxsat",
-                  "Katta bitiruv oqshomi",
-                  "Sertifikat bilan taqdirlanish",
-                  "Quron xatm bo'ladi",
-                ].map( ( feature ) => (
+                {basicPlan.map( ( feature ) => (
                   <li key={feature} className="flex items-start">
                     <Check className="h-6 w-6 flex-shrink-0 text-blue-500" />
                     <span className="ml-3 text-base">{feature}</span>
@@ -66,19 +123,7 @@ export default function PricingTable() {
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
-                {[
-                  "Faqat ayollar uchun",
-                  "Kurator shug'ullanadi",
-                  "3 oy davom etadi",
-                  "Umrbod videolarga ruxsat",
-                  "Haftada 6 kun dars bo'ladi",
-                  "3 kun Irodahoca videolar",
-                  "3 kun kurator jonli dars",
-                  "15 kishilik telegram guruh",
-                  "Katta bitiruv oqshomi",
-                  "Sertifikat bilan taqdirlanish",
-                  "Quron xatm bo'ladi",
-                ].map( ( feature ) => (
+                {premiumPlan.map( ( feature ) => (
                   <li key={feature} className="flex items-start">
                     <Check className="h-6 w-6 flex-shrink-0 text-red-700" />
                     <span className="ml-3 text-base">{feature}</span>
@@ -113,19 +158,7 @@ export default function PricingTable() {
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
-                {[
-                  "Faqat erkaklar uchun",
-                  "4 yil turkiyaga yashab kelgan kurator shug'ullanadi",
-                  "3 oy davom etadi",
-                  "Umrbod videolarga ruxsat",
-                  "Haftada 6 kun dars bo'ladi",
-                  "3 kun Irodahoca videolar",
-                  "3 kun kurator jonli dars",
-                  "15 kishilik telegram guruh",
-                  "Katta bitiruv oqshomi",
-                  "Sertifikat bilan taqdirlanish",
-                  "Quron xatm bo'ladi",
-                ].map( ( feature ) => (
+                {erkakPlan.map( ( feature ) => (
                   <li key={feature} className="flex items-start">
                     <Check className="h-6 w-6 flex-shrink-0 text-black" />
                     <span className="ml-3 text-base">{feature}</span>
@@ -160,24 +193,10 @@ export default function PricingTable() {
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
-                {[
-                  "Faqat ayollar uchun",
-                  "Irodahoca shug'ullanadi",
-                  "3 oy davom etadi",
-                  "Umrbod videolarga ruxsat",
-                  "Haftada 6 kun dars bo'ladi",
-                  "3 kun Irodahoca videolar",
-                  "3 kun Irodahoca jonli dars",
-                  "20 kishilik telegram guruh",
-                  "Katta bitiruv oqshomi",
-                  "Sertifikat bilan taqdirlanish",
-                  "Quron xatm bo'ladi",
-                  "Yordamchi ustoz xizmati",
-                  "Ustoz bo'lish imkoniyati",
-                ].map( ( feature, index ) => (
+                {vipPlan.map( ( feature, index ) => (
                   <li key={index} className="flex items-start">
                     <Check className="h-6 w-6 flex-shrink-0 text-yellow-400" />
-                    <span className={`ml-3 text-base ${( index == 1 || index == 6 || index == 11 || index == 12 ) ? 'text-red-600 font-semibold' : ''}`}>
+                    <span className={`ml-3 text-base ${( index == 1 || index == 6 || index == 16 || index == 17 ) ? 'text-red-600 font-semibold' : ''}`}>
                       {feature}
                     </span>
                   </li>

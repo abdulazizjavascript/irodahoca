@@ -1,9 +1,9 @@
 const UZTURK = () => {
   return (
     <section>
-      <img src="/uzturk.png" alt="UZTURK" />
-      <img src="/goal.png" alt="UZTURK maqsadi" />
-      <img src="/motto.png" alt="UZTURK shiori" />
+      <img className="w-full" src="/uzturk.png" alt="UZTURK" />
+      <img className="w-full" src="/goal.png" alt="UZTURK maqsadi" />
+      <img className="w-full" src="/motto.png" alt="UZTURK shiori" />
     </section>
   )
 }

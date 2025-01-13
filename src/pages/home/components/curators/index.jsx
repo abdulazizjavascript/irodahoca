@@ -71,7 +71,6 @@ export function Curators() {
           ) )}
         </div>
         <PlansBtn />
-
       </div>
     </section>
   )

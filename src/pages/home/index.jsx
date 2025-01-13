@@ -28,8 +28,8 @@ const HomePage = () => {
       <Bonus />
       <SampleLessons />
       <PricingTable />
-      <Curators />
       <CountdownTimer />
+      <Curators />
       <Admin />
       <Students />
       <FAQ />
