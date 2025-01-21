@@ -16,7 +16,7 @@ export default function Page() {
           <h2 className='text-xl text-yellow-500 font-bebas'>Bo'lajak talaba, magistr, doktorantlar !</h2>
         </div>
         <div className="inline-block rounded-full border border-black border-dashed px-8 py-2 mb-2">
-          26-27-yanvar | Soat 20:00 da
+          26-yanvar | Soat 20:00 da
         </div>
         <h3 className="text-md font-bold mb-4">
           Turk tili bo'yicha ekspert IRODAHOCA va UZTURK o'quv markazi tomonidan turk tili orqali
