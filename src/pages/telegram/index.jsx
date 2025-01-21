@@ -12,11 +12,11 @@ export default function Telegram() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
-              Oxirgi qadam qoldi 🥳
+            <h1 className="bg-red-500 py-3 rounded-lg text-white text-4xl font-condensed uppercase md:text-6xl font-bold">
+              Oxirgi qadam qoldi!
             </h1>
             <p className="text-sm md:text-2xl text-gray-600 max-w-xl">
-              Jonli efirda qatnashish uchun quyidagi ko'k tugmani bosib yopiq kanalga obuna bo'ling!
+              Masterklassda qatnashish uchun quyidagi ko'k tugmani bosib, Bismillah deya telegram kanalga obuna bo'ling!
             </p>
 
             {/* Arrows and Button */}
@@ -33,7 +33,7 @@ export default function Telegram() {
                 ) )}
               </div>
               <a
-                href='https://t.me/turktili_jamiyat'
+                href='https://t.me/turktili_sertifikat_100'
                 className="w-4/5 flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slide"
               >
                 <span>OBUNA BO'LISH</span>
