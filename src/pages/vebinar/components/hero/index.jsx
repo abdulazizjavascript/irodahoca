@@ -26,7 +26,7 @@ export default function Page() {
           nomli 2 kunlik onlayn bepul masterklass
         </p>
         <div className="max-w-3xl mx-auto mb-8">
-          <h2 className="text-lg font-semibold mb-4">
+          <h2 className="text-lg font-semibold mb-4 text-red-500">
             Sertifikatsiz qolib ketishni istamasangiz, bu masterklass siz uchun juda-juda muhim.
           </h2>
         </div>
