@@ -12,10 +12,10 @@ export default function Telegram() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-            <h1 className="bg-red-500 py-3 rounded-lg text-white text-4xl font-condensed uppercase md:text-6xl font-bold">
+            <h1 className="bg-red-500 py-3 rounded-lg text-white text-3xl font-condensed uppercase md:text-6xl font-bold">
               Oxirgi qadam qoldi!
             </h1>
-            <p className="text-md md:text-2xl text-gray-600 max-w-xl">
+            <p className="text-sm md:text-2xl text-gray-600 max-w-xl">
               Masterklassda qatnashish uchun quyidagi ko'k tugmani bosib, Bismillah deya telegram kanalga obuna bo'ling!
             </p>
 
