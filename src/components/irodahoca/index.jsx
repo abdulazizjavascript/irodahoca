@@ -6,9 +6,9 @@ const Irodahoca = () => {
       <div className="container mx-auto px-4 py-8 relative">
         <div className="space-y-4">
           <div className="text-center">
-            <h1 className="mb-3 text-3xl font-bold text-black">
+            {/* <h1 className="mb-3 text-3xl font-bold text-black">
               KURS MUALLIFI
-            </h1>
+            </h1> */}
             <h1 className="mb-3 text-3xl font-bold bg-red-600 text-white py-3 rounded-lg">
               IRODAHOCA KIM ?
             </h1>
