@@ -15,7 +15,7 @@ export default function Telegram() {
             <h1 className="bg-red-500 py-3 rounded-lg text-white text-4xl font-condensed uppercase md:text-6xl font-bold">
               Oxirgi qadam qoldi!
             </h1>
-            <p className="text-sm md:text-2xl text-gray-600 max-w-xl">
+            <p className="text-md md:text-2xl text-gray-600 max-w-xl">
               Masterklassda qatnashish uchun quyidagi ko'k tugmani bosib, Bismillah deya telegram kanalga obuna bo'ling!
             </p>
 
