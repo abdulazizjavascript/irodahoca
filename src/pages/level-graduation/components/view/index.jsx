@@ -55,8 +55,8 @@ const CertificateView = ( { name, certificateRef, level, teacher, ball } ) => {
         </div>
       </div>
 
-      <div className="text-center mt-10 text-white">
-        <p className="inline-block text-xl font-cursive border-b-2 border-white pb-3">{teacher}</p>
+      <div className="text-center mt-5 text-white">
+        <p className="inline-block text-xl font-cursive border-b-2 border-white pb-3 uppercase">{teacher}</p>
         <p className="text-sm">USTOZ</p>
       </div>
     </div>
