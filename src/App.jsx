@@ -9,6 +9,7 @@ import ByePage from "./pages/bye"
 // import TashakkurnomaPage from "./pages/tashakkurnoma"
 import VebinarPage from "./pages/vebinar"
 import GraduationPage from "./pages/graduation"
+import LevelGraduationPage from "./pages/level-graduation"
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='bye' element={<ByePage />} />
         {/* <Route path='tashakkurnoma' element={<TashakkurnomaPage />} /> */}
         <Route path='graduation' element={<GraduationPage />} />
+        <Route path='level-graduation' element={<LevelGraduationPage />} />
       </Routes>
     </BrowserRouter>
   )

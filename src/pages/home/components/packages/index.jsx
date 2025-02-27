@@ -97,9 +97,8 @@ export default function PricingTable() {
               </ul>
               <div className="mt-8">
                 <div className="flex flex-col items-center justify-center">
-                  <span className="text-red-600">JAMI TO'LOV</span>
-                  <span className="line-through text-gray-500">1.197.000 so'm</span>
-                  <span className="line-through text-gray-500">1.047.000 so'm</span>
+                  <span className="text-gray-500">1.197.000 so'm <span className='inline-block bg-red-600 rounded p-1 text-white'>4 x</span> </span>
+                  <span className="text-gray-500">1.047.000 so'm <span className='inline-block bg-red-600 rounded p-1 text-white'>4 x</span> </span>
                   <span className="text-2xl font-bold text-red-600">897.000 so'm</span>
                   <span className="mt-2 inline-flex items-center justify-center gap-2 rounded-md text-xl bg-red-600 px-3 py-1 font-semibold text-white">
                     25%
@@ -119,7 +118,7 @@ export default function PricingTable() {
               <p className="text-center text-lg text-white font-bold">KURATORLIK TA'RIFI</p>
             </div>
             <div className="bg-red-800 py-2 border-t border-red-700">
-              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 40 / 60 </p>
+              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 90 / <span><Infinity /></span> </p>
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
@@ -132,9 +131,8 @@ export default function PricingTable() {
               </ul>
               <div className="mt-8">
                 <div className="flex flex-col items-center justify-center">
-                  <span className="text-red-600">JAMI TO'LOV</span>
-                  <span className="line-through text-gray-500">1.397.000 so'm</span>
-                  <span className="line-through text-gray-500">1.197.000 so'm</span>
+                  <span className="text-gray-500">1.397.000 so'm <span className='inline-block bg-red-600 rounded p-1 text-white'>4 x</span> </span>
+                  <span className="text-gray-500">1.197.000 so'm <span className='inline-block bg-red-600 rounded p-1 text-white'>4 x</span> </span>
                   <span className="text-2xl font-bold text-red-600">997.000 so'm</span>
                   <span className="mt-2 inline-flex items-center justify-center gap-2 rounded-md text-xl bg-red-600 px-3 py-1 font-semibold text-white">
                     30%
@@ -154,7 +152,7 @@ export default function PricingTable() {
               <p className="text-center text-lg text-white font-bold">KURATORLIK TA'RIFI</p>
             </div>
             <div className="bg-black py-2 border-t border-gray-500">
-              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 10 / 30 </p>
+              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 15 / <span><Infinity /></span> </p>
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
@@ -167,9 +165,8 @@ export default function PricingTable() {
               </ul>
               <div className="mt-8">
                 <div className="flex flex-col items-center justify-center">
-                  <span className="text-red-600">JAMI TO'LOV</span>
-                  <span className="line-through text-gray-500">1.597.000 so'm</span>
-                  <span className="line-through text-gray-500">1.397.000 so'm</span>
+                  <span className="text-gray-500">1.597.000 so'm <span className='inline-block bg-red-600 rounded p-1 text-white'>4 x</span> </span>
+                  <span className="text-gray-500">1.397.000 so'm <span className='inline-block bg-red-600 rounded p-1 text-white'>4 x</span> </span>
                   <span className="text-2xl font-bold text-red-600">1.197.000 so'm</span>
                   <span className="mt-2 inline-flex items-center justify-center gap-2 rounded-md text-xl bg-red-600 px-3 py-1 font-semibold text-white">
                     30%
@@ -189,7 +186,7 @@ export default function PricingTable() {
               <p className="text-center text-lg text-white font-bold">SHOGIRLIK TA'RIFI</p>
             </div>
             <div className="bg-yellow-400 py-2 border-t border-yellow-300">
-              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 36 / 40</p>
+              <p className="text-center text-lg text-white flex items-center justify-center gap-2">JOYLAR SONI: 40 / 40</p>
             </div>
             <div className="p-6 flex-1">
               <ul className="space-y-4">
@@ -204,9 +201,8 @@ export default function PricingTable() {
               </ul>
               <div className="mt-8">
                 <div className="flex flex-col items-center justify-center">
-                  <span className="text-red-600">JAMI TO'LOV</span>
-                  <span className="line-through text-gray-500">1.997.000 so'm</span>
-                  <span className="line-through text-gray-500">1.747.000 so'm</span>
+                  <span className="text-gray-500">1.997.000 so'm <span className='inline-block bg-red-600 rounded p-1 text-white'>4 x</span>  499.000</span>
+                  <span className="text-gray-500">1.747.000 so'm <span className='inline-block bg-red-600 rounded p-1 text-white'>4 x</span>  873.500</span>
                   <span className="text-2xl font-bold text-red-600">1.497.000 so'm</span>
                   <span className="mt-2 inline-flex items-center justify-center gap-2 rounded-md text-xl bg-red-600 px-3 py-1 font-semibold text-white">
                     25%

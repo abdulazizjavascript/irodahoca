@@ -18,7 +18,6 @@ const CourseProcess = () => {
             {events.map( item => <div key={item} className="flex  items-start gap-1"> <div className="min-h-4 min-w-4 max-h-4 max-w-4 pt-0.5"><SquareCheckBig className="w-full h-full" /></div> <p>{item}</p> </div> )}
           </Card>
         </div>
-
         <div className="relative mb-12" >
           <div className="absolute left-1/2 -translate-x-1/2 transform -translate-y-1/2 bg-red-600 text-white px-2 py-1 rounded-lg shadow-lg">
             <h1 className="text-lg font-bold tracking-wider whitespace-nowrap">DARAJA IMTIHONLARI</h1>

@@ -91,13 +91,13 @@ const Course = () => {
                     {item.title}
                   </h2>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                {/* <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   <div className="bg-red-600 text-white px-2 py-1 rounded-md shadow-lg">
                     <p className="text-xs text-center whitespace-nowrap">
                       {item.days}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             ) )}
           </div>
