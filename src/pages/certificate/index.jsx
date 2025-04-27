@@ -40,7 +40,7 @@ export default function CertificatePage() {
         <div className="mb-3 text-center">
           <span>Turk tili bo'yicha O'zbekistonda hali bo'lmagan</span>
           <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500"> 1 OYLIK</span> <span className="text-red-500">BEPUL KURS</span></h1>
-          <span>da qatnashganingiz uchun tashkkur. Sizni kurslarimizda yana kutib qolamiz 😍</span>
+          <span>da qatnashganingiz uchun tashakkur. Sizni kurslarimizda yana kutib qolamiz 😍</span>
           {/* <span>nomli vibenarimizning 1-kunida qatnashganingiz uchun tashakkur. Qolgan kunlarda ham sizni kutamiz 😍</span> */}
           <h1 className='mt-3 font-bold'>Marhamat, ism-familiyangizni kiritib sertifikatingizni olishingiz mumkin.</h1>
         </div>
