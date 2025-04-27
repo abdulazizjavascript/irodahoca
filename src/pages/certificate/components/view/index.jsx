@@ -22,9 +22,9 @@ const CertificateView = ( { name, certificateRef } ) => {
       {/* Certificate Title */}
       <div className="text-center">
         <h1 className="mb-8 text-8xl font-bold text-yellow-500">SERTIFIKAT</h1>
-        <p className="text-xl text-white"> Turk tili bo'yicha O'zbekistondagi eng katta </p>
-        <h2 className="text-3xl text-white font-bold mb-1"><span className="text-green-500">SERTIFIKAT</span> <span className="text-red-500">SIRLARI</span></h2>
-        <p className="text-xl text-white"> nomli vebinarning 2-kunida qatnashganligi uchun </p>
+        <p className="text-xl text-white"> Turk tili bo'yicha O'zbekistonda hali bo'lmagan </p>
+        <h2 className="text-3xl text-white font-bold mb-1"><span className="text-green-500">1 OYLIK</span> <span className="text-red-500">BEPUL KURS</span></h2>
+        <p className="text-xl text-white"> darslarida ishtirok etganligi uchun </p>
       </div>
 
       {/* Content */}
@@ -34,7 +34,7 @@ const CertificateView = ( { name, certificateRef } ) => {
         </h1>
         <div className="mx-28 h-[1px] bg-white"></div>
         <p className="text-xl text-white">
-          Turk tilini o'rganib, 2025-yilda turk tilidan sertifikatni 100% naqd qilishingiz tilakdoshimiz !
+          Turk tilidan sertifikatni 100% naqd qilishingiz tilakdoshimiz !
         </p>
       </div>
 
@@ -58,7 +58,7 @@ const CertificateView = ( { name, certificateRef } ) => {
       </div>
 
       <div className="text-center mt-10">
-        <p className="text-white">05.01.2025</p>
+        <p className="text-white">27.04.2025</p>
       </div>
     </div>
   );
