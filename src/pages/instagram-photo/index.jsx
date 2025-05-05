@@ -1,4 +1,4 @@
-import instagramPhoto from '../../assets/irodahoca.jpg'
+import instagramPhoto from '../../assets/irodahoca-full.png'
 
 const InstagramPhoto = () => {
   return (
