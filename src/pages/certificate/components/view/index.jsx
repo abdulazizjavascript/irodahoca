@@ -23,8 +23,8 @@ const CertificateView = ( { name, certificateRef } ) => {
       <div className="text-center">
         <h1 className="mb-8 text-8xl font-bold text-yellow-500">SERTIFIKAT</h1>
         <p className="text-xl text-white"> Turk tili bo'yicha O'zbekistonda hali bo'lmagan </p>
-        <h2 className="text-3xl text-white font-bold mb-1"><span className="text-green-500">1 OYLIK</span> <span className="text-red-500">BEPUL KURS</span></h2>
-        <p className="text-xl text-white"> darslarida ishtirok etganligi uchun </p>
+        <h2 className="text-3xl text-white font-bold mb-1"><span className="text-green-500">SERTIFIKATNI 100% NAQD QILISH</span> <span className="text-red-500">SIR-ASRORLARI NOMLI MASTERKLASS</span></h2>
+        <p className="text-xl text-white"> da ishtirok etganligi uchun </p>
       </div>
 
       {/* Content */}
@@ -58,7 +58,7 @@ const CertificateView = ( { name, certificateRef } ) => {
       </div>
 
       <div className="text-center mt-10">
-        <p className="text-white">27.04.2025</p>
+        <p className="text-white">06.05.2025</p>
       </div>
     </div>
   );
