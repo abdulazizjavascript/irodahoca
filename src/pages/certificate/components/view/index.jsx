@@ -23,8 +23,8 @@ const CertificateView = ( { name, certificateRef } ) => {
       <div className="text-center">
         <h1 className="mb-8 text-8xl font-bold text-yellow-500">SERTIFIKAT</h1>
         <p className="text-xl text-white"> Turk tili bo'yicha O'zbekistonda hali bo'lmagan </p>
-        <h2 className="text-3xl text-white font-bold mb-1"><span className="text-green-500">SERTIFIKATNI 100% NAQD QILISH</span> <span className="text-red-500">SIR-ASRORLARI NOMLI MASTERKLASS</span></h2>
-        <p className="text-xl text-white"> da ishtirok etganligi uchun </p>
+        <h2 className="text-3xl text-white font-bold mb-1"><span className="text-green-500">SERTIFIKATNI 100%</span> <span className="text-red-500">NAQD QILISH SIR-ASRORLARI</span></h2>
+        <p className="text-xl text-white">nomli masterklassda ishtirok etganligi uchun </p>
       </div>
 
       {/* Content */}
