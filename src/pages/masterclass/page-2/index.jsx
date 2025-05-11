@@ -19,7 +19,7 @@ export default function MasterclassPage2() {
         <h2 className="text-[22px] font-semibold mb-2 uppercase">
           Bu texnikalar orqali
         </h2>
-        <h1 className="flex justify-center text-[21px] uppercase font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>o'quvchilarimiz</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>0 dan 2.5 oyda</span></h1>
+        <h1 className="flex justify-center text-[20px] uppercase font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>o'quvchilarimiz</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>0 dan 2.5 oyda</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
           <h2 className="text-[22px] font-semibold mb-4 uppercase">
             turklardek gapirishni o'rganib <br /> B2 sertifikatli bo'lishyapti.
