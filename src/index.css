@@ -1,17 +1,17 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("/fonts/roboto-condensed/Roboto_Condensed-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  src: url("/fonts/bebas/BebasNeue-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
 
 @keyframes slide-in {

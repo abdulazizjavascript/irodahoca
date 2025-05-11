@@ -11,7 +11,7 @@ export default function MasterclassPage1() {
   const [ isModalOpen, setIsModalOpen ] = useState( false )
 
   return (
-    <div className="">
+    <div>
       <div className="container mx-auto px-3 pt-4 pb-8 text-center">
         <div className="inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
           22-23-24-may | soat 20:30 | bepul masterklass
@@ -29,6 +29,7 @@ export default function MasterclassPage1() {
 
         <div className="relative max-w-xl mx-auto">
           <LazyLoadImage
+            rel="preload"
             className="mx-auto mb-8 rounded-3xl"
             alt="Irodahoca"
             height="250px"
@@ -59,7 +60,6 @@ export default function MasterclassPage1() {
           <Timer minute={2} />
         </div>
       </div>
-
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />
     </div> )
 }
