@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import RegisterModal from '../../../components/registeration-modal'
 
-import irodahoca from '../../../assets/irodahoca-sm.webp'
+import irodahoca from '../../../assets/irodahoca-sm-size.webp'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Timer from '../../../components/timer'
 
@@ -29,7 +29,7 @@ export default function MasterclassPage1() {
 
         <div className="relative max-w-xl mx-auto">
           <LazyLoadImage
-            className="mx-auto mb-8 rounded-3xl w-full object-cover h-[250px]"
+            className="mx-auto mb-8 rounded-3xl object-cover"
             alt="Irodahoca"
             fetchPriority='high'
             effect="blur"
