@@ -29,8 +29,10 @@ export default function MasterclassPage1() {
 
         <div className="relative max-w-xl mx-auto">
           <LazyLoadImage
-            className="mx-auto mb-8 rounded-3xl object-cover"
+            className="mx-auto mb-8 rounded-3xl"
             alt="Irodahoca"
+            height="250px"
+            width="351px"
             fetchPriority='high'
             effect="blur"
             src={irodahoca} />
