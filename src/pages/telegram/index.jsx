@@ -5,7 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import ReactPixel from 'react-facebook-pixel';
 
-import irodahoca from '../../assets/irodahoca-new.jpg'
+import irodahoca from '../../assets/irodahoca-new-sm.webp'
 
 export default function Telegram() {
 
