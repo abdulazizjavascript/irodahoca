@@ -40,9 +40,10 @@ export default function Telegram() {
                 ) )}
               </div>
               <a
-                onClick={() => ReactPixel.track( 'Lead' )}
                 href='https://t.me/turktili_masterklass'
                 className="w-4/5 flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slide"
+                target="_blank"
+                onClick={() => { ReactPixel.track( 'Lead' ) }}
               >
                 <span>OBUNA BO'LISH</span>
                 <img width="30" height="30" src="https://optim.tildacdn.one/tild3836-6439-4334-a334-663162313433/-/resize/104x/-/format/webp/492-4925781_telegram.png" alt="Telegram" />
