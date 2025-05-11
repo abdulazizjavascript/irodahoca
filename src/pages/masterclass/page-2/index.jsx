@@ -56,7 +56,10 @@ export default function MasterclassPage2() {
 
           <div className="flex items-center justify-center gap-4 mb-2">
             <button
-              onClick={() => setIsModalOpen( true )}
+              onClick={() => {
+                setIsModalOpen( true )
+                ReactPixel.track( "Lead" );
+              }}
               className="font-bold -mt-6 z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               RO'YXATDAN O'TISH
