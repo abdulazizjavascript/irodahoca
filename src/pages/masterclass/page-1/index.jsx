@@ -3,11 +3,20 @@
 import { useState } from 'react'
 import RegisterModal from '../../../components/registeration-modal'
 
-import irodahoca from '../../../assets/irodahoca-sm-size.webp'
+import ReactPixel from 'react-facebook-pixel';
+
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+
+import irodahoca from '../../../assets/irodahoca-sm-size.webp'
 import Timer from '../../../components/timer'
 
 export default function MasterclassPage1() {
+
+
+  ReactPixel.init( '995937562693005' );
+  ReactPixel.pageView(); // For page load
+  ReactPixel.track( 'PageView' ); // Custom events
+
   const [ isModalOpen, setIsModalOpen ] = useState( false )
 
   return (
