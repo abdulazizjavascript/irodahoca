@@ -41,7 +41,7 @@ export default function MasterclassPage1() {
           <div className="flex items-center justify-center gap-4 mb-2">
             <button
               onClick={() => setIsModalOpen( true )}
-              className="font-bold -mt-14 z-10 bg-red-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className="font-bold -mt-6 z-10 bg-red-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               RO'YXATDAN O'TISH
             </button>
