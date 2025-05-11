@@ -38,7 +38,7 @@ export default function MasterclassPage1() {
             effect="blur"
             src={irodahoca} />
 
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 mb-2">
             <button
               onClick={() => setIsModalOpen( true )}
               className="font-bold -mt-14 z-10 bg-red-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
@@ -46,11 +46,18 @@ export default function MasterclassPage1() {
               RO'YXATDAN O'TISH
             </button>
           </div>
-          <Timer />
-          <p className="text-xl font-bold text-red-600">BEPUL</p>
-          <p className="text-sm mb-3">
-            Bu 2 kun uchun sizga turk tilidan 3 oy ichida sertifikatni 100% naqd qilish yo'llarini o'rganasiz.
-          </p>
+          <div className='flex justify-center items-center gap-2'>
+            <div>
+              <span className='text-4xl'>🎁</span>
+            </div>
+            <div>
+              <h3 className='text-[18px]'>
+                "Turkcha so'zlashamiz kitobi"
+              </h3>
+              <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
+            </div>
+          </div>
+          <Timer minute={2} />
         </div>
       </div>
 

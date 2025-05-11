@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useState, useEffect, useRef } from 'react';
 
 export default function Timer( { minute } ) {
-  const [ timeLeft, setTimeLeft ] = useState( minute | 1 * 60 ); // 60 seconds
+  const [ timeLeft, setTimeLeft ] = useState( ( minute || 1 ) * 60 ); // 60 seconds
   const timerRef = useRef( null );
 
   useEffect( () => {
@@ -24,8 +24,8 @@ export default function Timer( { minute } ) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="text-3xl font-bold mb-8">{formatTime( timeLeft )}</div>
+    <div className="flex flex-col items-center justify-center my-3">
+      <div className="text-3xl font-bold">{formatTime( timeLeft )}</div>
     </div>
   );
 }
