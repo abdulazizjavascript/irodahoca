@@ -3,57 +3,65 @@
 import { useState } from 'react'
 import RegisterModal from '../../../components/registeration-modal'
 
-import irodahoca from '../../../assets/irodahoca.png'
+import irodahoca from '../../../assets/irodahoca-sm-size.webp'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import Timer from '../../../components/timer'
 
 export default function MasterclassPage2() {
   const [ isModalOpen, setIsModalOpen ] = useState( false )
 
   return (
-    <div className="bg-pink-100">
+    <div>
       <div className="container mx-auto px-3 pt-4 pb-8 text-center">
-        <div className='bg-black rounded-md py-1 mb-2'>
-          <h2 className='text-xl text-yellow-500 font-bebas'>Bo'lajak talaba, magistr, doktorantlar !</h2>
+        <div className="inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
+          22-23-24-may | soat 20:30 | bepul masterklass
         </div>
-        <div className="inline-block rounded-full border border-black border-dashed px-8 py-2 mb-2">
-          26-yanvar | Soat 20:00 da
-        </div>
-        <h3 className="text-md font-bold mb-4">
-          Turk tili bo'yicha ekspert IRODAHOCA va UZTURK o'quv markazi tomonidan turk tili orqali
-        </h3>
-        <h1 className="flex justify-center text-2xl font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>0 DAN 3 OYDA</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>SERTIFIKAT</span></h1>
-        <p className="text-md font-bold mb-4">
-          nomli 2 kunlik onlayn bepul masterklass
-        </p>
+        <h2 className="text-[22px] font-semibold mb-2 uppercase">
+          Bu texnikalar orqali
+        </h2>
+        <h1 className="flex justify-center text-[21px] uppercase font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>o'quvchilarimiz</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>0 dan 2.5 oyda</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
-          <h2 className="text-lg font-semibold mb-4 text-red-500">
-            Sertifikatsiz qolib ketishni istamasangiz, bu masterklass siz uchun juda-juda muhim.
+          <h2 className="text-[22px] font-semibold mb-4 uppercase">
+            turklardek gapirishni o'rganib <br /> B2 sertifikatli bo'lishyapti.
           </h2>
+          <p className="text-[15px] mb-4">
+            Bu texnikalar 3 kunlik bepul masterklassda o'rgatiladi. Hoziroq quyidagi tugmani bosib ro'yxatdan o'ting.
+          </p>
         </div>
 
         <div className="relative max-w-xl mx-auto">
           <LazyLoadImage
-            className="mx-auto mb-8 rounded-3xl w-full object-cover h-[250px]"
+            rel="preload"
+            className="mx-auto mb-8 rounded-3xl"
             alt="Irodahoca"
+            height="250px"
+            width="351px"
             fetchPriority='high'
             effect="blur"
             src={irodahoca} />
 
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 mb-2">
             <button
               onClick={() => setIsModalOpen( true )}
-              className="font-bold -mt-14 z-10 bg-red-600 text-white px-12 py-4 rounded-full text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className="font-bold -mt-6 z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
-              ISHTIROK ETISH
+              RO'YXATDAN O'TISH
             </button>
           </div>
-          <p className="text-xl font-bold text-red-600">BEPUL</p>
-          <p className="text-sm mb-3">
-            Bu 2 kun uchun sizga turk tilidan 3 oy ichida sertifikatni 100% naqd qilish yo'llarini o'rganasiz.
-          </p>
+          <div className='relative z-10 flex justify-center items-center gap-2'>
+            <div>
+              <span className='text-4xl'>🎁</span>
+            </div>
+            <div>
+              <h3 className='text-[18px]'>
+                "Turkcha so'zlashamiz kitobi"
+              </h3>
+              <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
+            </div>
+          </div>
+          <Timer className='relative z-10' minute={2} />
         </div>
       </div>
-
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />
     </div> )
 }
