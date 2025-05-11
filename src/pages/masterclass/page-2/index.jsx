@@ -19,13 +19,14 @@ export default function MasterclassPage2() {
         <h2 className="text-[22px] font-semibold mb-2 uppercase">
           Bu texnikalar orqali
         </h2>
-        <h1 className="flex justify-center text-[20px] uppercase font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>o'quvchilarimiz</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>0 dan 2.5 oyda</span></h1>
+        <h1 className="flex justify-center text-[19px] uppercase font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>o'quvchilarimiz</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>0 dan 2.5 oyda</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
-          <h2 className="text-[22px] font-semibold mb-4 uppercase">
-            turklardek gapirishni o'rganib <br /> B2 sertifikatli bo'lishyapti.
+          <h2 className="text-[21px] font-semibold mb-4 uppercase">
+            <span>turklardek gapirishni o'rganib</span> <br />
+            <span className='text-[23px]'>B2 sertifikatli bo'lishyapti.</span>
           </h2>
-          <p className="text-[15px] mb-4">
-            Bu texnikalar 3 kunlik bepul masterklassda o'rgatiladi. Hoziroq quyidagi tugmani bosib ro'yxatdan o'ting.
+          <p className="text-[14px] mb-4">
+            Bu texnikalar 3 kunlik bepul masterklassda o'rgatiladi. <br /> Hoziroq quyidagi tugmani bosib ro'yxatdan o'ting.
           </p>
         </div>
 
