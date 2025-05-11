@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import RegisterModal from '../../../components/registeration-modal'
 
-import irodahoca from '../../../assets/irodahoca-sm.png'
+import irodahoca from '../../../assets/irodahoca-sm.webp'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Timer from '../../../components/timer'
 
