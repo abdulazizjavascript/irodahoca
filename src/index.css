@@ -6,6 +6,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("/fonts/roboto-condensed/Roboto_Condensed-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
