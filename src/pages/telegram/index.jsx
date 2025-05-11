@@ -3,11 +3,14 @@
 import { ArrowDown } from 'lucide-react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
+import { useNavigate } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
 
 import irodahoca from '../../assets/irodahoca-new-sm.webp'
 
 export default function Telegram() {
+
+  const navigate = useNavigate();
 
   ReactPixel.init( '1194225341879374' );
   ReactPixel.pageView(); // For page load
@@ -39,16 +42,16 @@ export default function Telegram() {
                   />
                 ) )}
               </div>
-              <a
-                type='button'
-                href='https://t.me/turktili_masterklass'
+              <button
                 className="w-4/5 flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slide"
-                target="_blank"
-                onClick={() => { ReactPixel.track( 'Lead' ) }}
+                onClick={() => {
+                  navigate( 'https://t.me/turktili_masterklass' );
+                  ReactPixel.track( 'Lead' )
+                }}
               >
                 <span>OBUNA BO'LISH</span>
                 <img width="30" height="30" src="https://optim.tildacdn.one/tild3836-6439-4334-a334-663162313433/-/resize/104x/-/format/webp/492-4925781_telegram.png" alt="Telegram" />
-              </a>
+              </button>
             </div>
           </div>
 
