@@ -42,7 +42,7 @@ export default function Telegram() {
               <button
                 className="w-4/5 flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slide"
                 onClick={() => {
-                  window.location( 'https://t.me/turktili_masterklass' );
+                  window.location.href = 'https://t.me/turktili_masterklass';
                   ReactPixel.track( "Lead" );
                 }}
               >
