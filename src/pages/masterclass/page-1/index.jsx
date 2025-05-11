@@ -16,9 +16,6 @@ export default function MasterclassPage1() {
         <div className="inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
           22-23-24-may | soat 20:30 | bepul masterklass
         </div>
-        <h3 className="text-xl font-bold mb-3">
-          C1 darajali filolog Iroda Nasriddinova
-        </h3>
         <h1 className="flex justify-center text-2xl uppercase font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>Turk tilida</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>0 dan 3 oyda</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
           <h2 className="text-[22px] font-semibold mb-4 uppercase">
