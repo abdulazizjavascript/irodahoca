@@ -1,13 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { useState } from 'react'
-import RegisterModal from '../../../components/registeration-modal'
-
-import irodahoca from '../../../assets/irodahoca-sm-size.webp'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+
+import ReactPixel from 'react-facebook-pixel';
+
+import RegisterModal from '../../../components/registeration-modal'
 import Timer from '../../../components/timer'
 
+import irodahoca from '../../../assets/irodahoca-sm-size.webp'
+
 export default function MasterclassPage2() {
+
+  ReactPixel.init( '559470840532153' );
+  ReactPixel.pageView(); // For page load
+  ReactPixel.track( 'PageView' ); // Custom events
+
   const [ isModalOpen, setIsModalOpen ] = useState( false )
 
   return (
