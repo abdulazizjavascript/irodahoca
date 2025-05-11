@@ -3,9 +3,16 @@
 import { ArrowDown } from 'lucide-react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
+import ReactPixel from 'react-facebook-pixel';
+
 import irodahoca from '../../assets/irodahoca-new.jpg'
 
 export default function Telegram() {
+
+  ReactPixel.init( '1194225341879374' );
+  ReactPixel.pageView(); // For page load
+  ReactPixel.track( 'PageView' ); // Custom events
+
   return (
     <div className="bg-white">
       <main className="container mx-auto px-4 py-8 md:py-16">
@@ -33,6 +40,7 @@ export default function Telegram() {
                 ) )}
               </div>
               <a
+                onClick={() => ReactPixel.track( 'Lead' )}
                 href='https://t.me/turktili_masterklass'
                 className="w-4/5 flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-slide"
               >
@@ -58,8 +66,8 @@ export default function Telegram() {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </main >
+    </div >
   )
 }
 
