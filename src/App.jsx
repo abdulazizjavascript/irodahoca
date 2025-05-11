@@ -10,12 +10,16 @@ import ByePage from "./pages/bye"
 import VebinarPage from "./pages/vebinar"
 import GraduationPage from "./pages/graduation"
 import LevelGraduationPage from "./pages/level-graduation"
+import MasterclassPage1 from "./pages/masterclass/page-1"
+import MasterclassPage2 from "./pages/masterclass/page-2"
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="kurs" element={<HomePage />} />
+        <Route path="masterclass/1" element={<MasterclassPage1 />} />
+        <Route path="masterclass/2" element={<MasterclassPage2 />} />
         <Route index element={<VebinarPage />} />
         <Route path='ins' element={<InstagramPhoto />} />
         <Route path='telegram' element={<Telegram />} />
