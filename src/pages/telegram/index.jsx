@@ -23,7 +23,7 @@ export default function Telegram() {
               Oxirgi qadam qoldi!
             </h1>
             <p className="text-sm md:text-2xl text-gray-600 max-w-xl">
-              Masterklassda qatnashish uchun quyidagi ko'k tugmani bosib, Bismillah deya telegram kanalga obuna bo'ling!
+              Masterklassda qatnashish uchun quyidagi ko'k tugmani bosib, Bismillah deya telegram kanalga telegramga o'ting va obuna bo'lib doimiy kuzatib boring!
             </p>
 
             {/* Arrows and Button */}
@@ -46,7 +46,7 @@ export default function Telegram() {
                   ReactPixel.track( "Lead" );
                 }}
               >
-                <span>OBUNA BO'LISH</span>
+                <span>TELEGRAMGA O'TISH</span>
                 <img width="30" height="30" src="https://optim.tildacdn.one/tild3836-6439-4334-a334-663162313433/-/resize/104x/-/format/webp/492-4925781_telegram.png" alt="Telegram" />
               </button>
             </div>
