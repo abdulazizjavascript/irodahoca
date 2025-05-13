@@ -53,25 +53,25 @@ export default function MasterclassPage1() {
               className="flex items-center gap-2 font-bold -mt-6 z-10 bg-red-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               <span>RO'YXATDAN O'TISH</span>
-              <Timer minute={2} />
+              <Timer minute={2} className='text-xl font-bold'/>
             </button>
           </div>
           <h3 className='text-[13px] bg-red-500 inline-block px-2 text-white rounded-md'>
-            Ro'yxatdan o'tib telegram kanalga qo'shilganlar uchun sovg'a
-          </h3>
-          <div className='flex justify-center items-center gap-2'>
-            <div>
-              <span className='text-4xl'>🎁</span>
-            </div>
-            <div>
-              <h3 className='text-[18px]'>
-                "Turkcha so'zlashamiz kitobi"
-              </h3>
-              <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
+              Ro'yxatdan o'tib telegram kanalga qo'shilganlar uchun sovg'a
+            </h3>
+            <div className='flex justify-center items-center gap-2'>
+              <div>
+                <span className='text-4xl'>🎁</span>
+              </div>
+              <div>
+                <h3 className='text-[18px]'>
+                  "Turkcha so'zlashamiz kitobi"
+                </h3>
+                <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />
-    </div> )
+        <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />
+      </div> )
 }

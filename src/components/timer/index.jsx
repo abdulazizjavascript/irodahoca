@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState, useEffect, useRef } from 'react';
 
-export default function Timer( { minute } ) {
+export default function Timer( { minute, className } ) {
   const [ timeLeft, setTimeLeft ] = useState( ( minute || 1 ) * 60 ); // 60 seconds
   const timerRef = useRef( null );
 
@@ -24,12 +24,11 @@ export default function Timer( { minute } ) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="text-xl font-bold">{formatTime( timeLeft )}</div>
-    </div>
+    <div className={className}>{formatTime( timeLeft )}</div>
   );
 }
 
 Timer.propTypes = {
-  minute: PropTypes.number
+  minute: PropTypes.number,
+  className: PropTypes.string
 }

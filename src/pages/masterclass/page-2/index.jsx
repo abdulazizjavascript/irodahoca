@@ -62,7 +62,7 @@ export default function MasterclassPage2() {
               className="flex items-center gap-2 font-bold -mt-14 z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               <span>RO'YXATDAN O'TISH</span>
-              <Timer minute={2} />
+              <Timer minute={2} className='text-xl font-bold' />
             </button>
           </div>
           <h3 className='text-[13px] bg-red-500 inline-block px-2 text-white rounded-md'>
