@@ -24,8 +24,8 @@ export default function Timer( { minute } ) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center my-3">
-      <div className="text-3xl font-bold">{formatTime( timeLeft )}</div>
+    <div className="flex flex-col items-center justify-center">
+      <div className="text-xl font-bold">{formatTime( timeLeft )}</div>
     </div>
   );
 }

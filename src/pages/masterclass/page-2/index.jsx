@@ -60,11 +60,15 @@ export default function MasterclassPage2() {
                 setIsModalOpen( true );
                 ReactPixel.track( "Lead" );
               }}
-              className="font-bold -mt-6 z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className="flex items-center gap-2 font-bold -mt-6 z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
-              RO'YXATDAN O'TISH
+              <span>RO'YXATDAN O'TISH</span>
+              <Timer minute={2} />
             </button>
           </div>
+          <h3 className='text-[14px] bg-red-500 inline-block px-2 text-white rounded-md'>
+            Ro'yxatdan o'tib telegramga qo'shilganlar sovg'a
+          </h3>
           <div className='relative z-10 flex justify-center items-center gap-2'>
             <div>
               <span className='text-4xl'>🎁</span>
