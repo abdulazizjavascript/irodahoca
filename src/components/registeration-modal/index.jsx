@@ -162,7 +162,7 @@ export default function RegisterModal( { isOpen, onClose } ) {
             <h3 className='mb-2 text-[14px] bg-green-500 inline-block px-2 text-white rounded-sm'>
               Telegram kanalga qo'shilganlar uchun sovg'a
             </h3>
-            <div className='relative z-10 flex justify-center items-center'>
+            <div className='relative z-10 flex justify-center items-center gap-2'>
               <div>
                 <span className='text-4xl'>🎁</span>
               </div>
