@@ -48,8 +48,7 @@ export default function MasterclassPage2() {
             rel="preload"
             className="mx-auto mb-8 rounded-3xl"
             alt="Irodahoca"
-            height="250px"
-            width="351px"
+            width="330px"
             fetchPriority='high'
             effect="blur"
             src={irodahoca} />
@@ -60,14 +59,14 @@ export default function MasterclassPage2() {
                 setIsModalOpen( true );
                 ReactPixel.track( "Lead" );
               }}
-              className="flex items-center gap-2 font-bold -mt-6 z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className="flex items-center gap-2 font-bold -mt-14 z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               <span>RO'YXATDAN O'TISH</span>
               <Timer minute={2} />
             </button>
           </div>
-          <h3 className='text-[14px] bg-red-500 inline-block px-2 text-white rounded-md'>
-            Ro'yxatdan o'tib telegramga qo'shilganlar sovg'a
+          <h3 className='text-[13px] bg-red-500 inline-block px-2 text-white rounded-md'>
+            Ro'yxatdan o'tib telegram kanalga qo'shilganlar uchun sovg'a
           </h3>
           <div className='relative z-10 flex justify-center items-center gap-2'>
             <div>
@@ -80,7 +79,6 @@ export default function MasterclassPage2() {
               <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
             </div>
           </div>
-          <Timer className='relative z-10' minute={2} />
         </div>
       </div>
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />

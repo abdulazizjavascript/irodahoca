@@ -56,8 +56,8 @@ export default function MasterclassPage1() {
               <Timer minute={2} />
             </button>
           </div>
-          <h3 className='text-[14px] bg-red-500 inline-block px-2 text-white rounded-md'>
-            Ro'yxatdan o'tib telegramga qo'shilganlar sovg'a
+          <h3 className='text-[13px] bg-red-500 inline-block px-2 text-white rounded-md'>
+            Ro'yxatdan o'tib telegram kanalga qo'shilganlar uchun sovg'a
           </h3>
           <div className='flex justify-center items-center gap-2'>
             <div>
