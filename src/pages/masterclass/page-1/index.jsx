@@ -7,7 +7,7 @@ import ReactPixel from 'react-facebook-pixel';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-import irodahoca from '../../../assets/irodahoca-new-year.webp'
+import irodahoca from '../../../assets/irodahoca-new-year-1.webp'
 import Timer from '../../../components/timer'
 
 export default function MasterclassPage1() {
