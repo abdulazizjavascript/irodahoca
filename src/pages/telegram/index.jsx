@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { ArrowDown } from 'lucide-react'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+// import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import ReactPixel from 'react-facebook-pixel';
 
-import irodahoca from '../../assets/irodahoca-new-sm.webp'
+// import irodahoca from '../../assets/irodahoca-new-sm.webp'
 
 export default function Telegram() {
 
@@ -14,7 +14,7 @@ export default function Telegram() {
   ReactPixel.track( 'PageView' ); // Custom events
 
   return (
-    <div className="bg-white">
+    <div className="bg-white flex h-screen items-center justify-center">
       <main className="container mx-auto px-4 py-8 md:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Text Content */}
@@ -22,7 +22,7 @@ export default function Telegram() {
             <h1 className="bg-red-500 py-3 rounded-lg text-white text-3xl font-condensed uppercase md:text-6xl font-bold">
               Oxirgi qadam qoldi!
             </h1>
-            <p className="text-sm md:text-2xl text-gray-600 max-w-xl">
+            <p className="text-[15px] md:text-2xl text-gray-600 max-w-xl">
               Masterklassda qatnashish uchun quyidagi ko'k tugmani bosib, Bismillah deya telegram kanalga telegramga o'ting va obuna bo'lib doimiy kuzatib boring!
             </p>
 
@@ -52,8 +52,25 @@ export default function Telegram() {
             </div>
           </div>
 
+          <div className='text-center'>
+            <h3 className='mb-2 text-[14px] bg-green-500 inline-block px-2 text-white rounded-sm'>
+              Telegram kanalga qo'shilganlar uchun sovg'a
+            </h3>
+            <div className='relative z-10 flex justify-center items-center gap-2'>
+              <div>
+                <span className='text-4xl'>🎁</span>
+              </div>
+              <div>
+                <h3 className='text-[18px]'>
+                  "Turkcha so'zlashamiz kitobi"
+                </h3>
+                <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
+              </div>
+            </div>
+          </div>
+
           {/* Image */}
-          <div className="w-full md:w-1/2 relative">
+          {/* <div className="w-full md:w-1/2 relative">
             <div className="relative aspect-square max-w-lg mx-auto">
               <LazyLoadImage
                 src={irodahoca}
@@ -66,7 +83,7 @@ export default function Telegram() {
                 }}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </main >
     </div >

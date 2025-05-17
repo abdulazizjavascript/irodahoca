@@ -5,13 +5,13 @@ import { useEffect, useState } from 'react'
 
 import PropTypes from 'prop-types'
 import axios from 'axios'
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Timer from '../timer'
 
 export default function RegisterModal( { isOpen, onClose } ) {
   const [ showModal, setShowModal ] = useState( false )
   const [ loading, setLoading ] = useState( false );
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -39,9 +39,9 @@ export default function RegisterModal( { isOpen, onClose } ) {
 
       axios.post( 'https://irodahoca-production.up.railway.app/register', data );
 
-      // navigate( '/telegram' )
+      navigate( '/telegram' )
 
-      window.location.href = "https://t.me/turktili_masterklass/7"
+      // window.location.href = "https://t.me/turktili_masterklass/7"
 
     } catch ( err ) {
       console.log( err )
@@ -154,25 +154,9 @@ export default function RegisterModal( { isOpen, onClose } ) {
                   d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.963 7.963 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                 ></path>
               </svg> : null}
-              <span>Telegram kanalga o'tish</span>
+              <span>Ro'yxatdan o'tish</span>
               <Timer minute={1} className='text-md' />
             </button>
-          </div>
-          <div className='text-center'>
-            <h3 className='mb-2 text-[14px] bg-green-500 inline-block px-2 text-white rounded-sm'>
-              Telegram kanalga qo'shilganlar uchun sovg'a
-            </h3>
-            <div className='relative z-10 flex justify-center items-center gap-2'>
-              <div>
-                <span className='text-4xl'>🎁</span>
-              </div>
-              <div>
-                <h3 className='text-[18px]'>
-                  "Turkcha so'zlashamiz kitobi"
-                </h3>
-                <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
-              </div>
-            </div>
           </div>
         </form>
 
