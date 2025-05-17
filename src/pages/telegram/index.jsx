@@ -14,7 +14,7 @@ export default function Telegram() {
   ReactPixel.track( 'PageView' ); // Custom events
 
   return (
-    <div className="bg-white flex h-screen items-center justify-center">
+    <div className="bg-amber-50 flex h-screen items-center justify-center">
       <main className="container mx-auto px-4 py-8 md:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Text Content */}
@@ -22,10 +22,9 @@ export default function Telegram() {
             <h1 className="bg-red-500 py-3 rounded-lg text-white text-3xl font-condensed uppercase md:text-6xl font-bold">
               Oxirgi qadam qoldi!
             </h1>
-            <p className="text-[15px] md:text-2xl text-gray-600 max-w-xl">
-              Masterklassda qatnashish uchun quyidagi ko'k tugmani bosib, Bismillah deya telegram kanalga telegramga o'ting va obuna bo'lib doimiy kuzatib boring!
+            <p className="text-[18px] md:text-2xl text-gray-600 max-w-xl">
+              Masterklassda qatnashish uchun quyidagi "TELEGRAMGA O'TISH" nomli tugmani bosing.
             </p>
-
             {/* Arrows and Button */}
             <div className="relative pt-3 pb-4">
               <div className="flex justify-center md:justify-start space-x-4 mb-6">
@@ -50,11 +49,14 @@ export default function Telegram() {
                 <img width="30" height="30" src="https://optim.tildacdn.one/tild3836-6439-4334-a334-663162313433/-/resize/104x/-/format/webp/492-4925781_telegram.png" alt="Telegram" />
               </button>
             </div>
+            <p className="text-center text-[18px] md:text-2xl text-gray-600 max-w-xl">
+              Bismillah deya telegram kanalga o'ting <br /> va obuna bo'lib doimiy kuzatib boring!
+            </p>
           </div>
 
           <div className='text-center'>
             <h3 className='mb-2 text-[14px] bg-green-500 inline-block px-2 text-white rounded-sm'>
-              Telegram kanalga qo'shilganlar uchun sovg'a
+              Quyidagi sovg'a sizni telegramda kutib turibdi
             </h3>
             <div className='relative z-10 flex justify-center items-center gap-2'>
               <div>
