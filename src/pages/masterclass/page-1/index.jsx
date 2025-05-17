@@ -28,7 +28,9 @@ export default function MasterclassPage1() {
         <h2 className="text-[25px] font-semibold uppercase">
           Turk tilini 0 dan o'rganib
         </h2>
-        <h1 className="flex justify-center text-xl font-bold mb-1 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>tez va qisqa</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>vaqt ichida</span></h1>
+        <h1 className="flex justify-center text-xl font-bold mb-1 text-white">
+          <span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>2-3 oy ichida</span>
+          <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>osonlik bilan</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
           <h2 className="font-semibold mb-4 uppercase">
             <span className='text-[23px]'>100% sertifikatli bo'lish va</span> <br /> <span className='text-[21px]'>erkin gapira olish mumkinmi?</span>
