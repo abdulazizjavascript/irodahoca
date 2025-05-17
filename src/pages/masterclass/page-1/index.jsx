@@ -22,13 +22,13 @@ export default function MasterclassPage1() {
   return (
     <div>
       <div className="container mx-auto px-3 pt-4 pb-8 text-center">
-        <div className="uppercase inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
-          22-23-24-may | 20:30 | online masterklass
+        <div className="inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
+          22-23-24-may | soat 20:30 | online masterklass
         </div>
         <h2 className="text-[25px] font-semibold uppercase">
           Turk tilini 0 dan o'rganib
         </h2>
-        <h1 className="flex justify-center text-xl uppercase font-bold mb-1 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>3 oyga</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>bormasdan</span></h1>
+        <h1 className="flex justify-center text-xl font-bold mb-1 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>tez va qisqa</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>vaqt ichida</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
           <h2 className="font-semibold mb-4 uppercase">
             <span className='text-[23px]'>100% sertifikatli bo'lish va</span> <br /> <span className='text-[21px]'>erkin gapira olish mumkinmi?</span>
@@ -53,7 +53,7 @@ export default function MasterclassPage1() {
           <div className="flex items-center justify-center gap-4 mb-1">
             <button
               onClick={() => { setIsModalOpen( true ); ReactPixel.track( 'Lead' ); }}
-              className="flex items-center gap-2 font-bold -mt-10 z-10 bg-red-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className="flex items-center gap-2 font-bold -mt-10 z-10 bg-red-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors"
             >
               <span>RO'YXATDAN O'TISH</span>
               <Timer minute={2} className='text-xl font-bold' />
