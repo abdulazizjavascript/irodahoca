@@ -25,13 +25,13 @@ export default function MasterclassPage1() {
         <div className="uppercase inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
           22-23-24-may | 20:30 | online masterklass
         </div>
-        <h2 className="text-[27px] font-semibold uppercase">
+        <h2 className="text-[25px] font-semibold uppercase">
           Turk tilini 0 dan o'rganib
         </h2>
-        <h1 className="flex justify-center text-2xl uppercase font-bold mb-1 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>3 oyga</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>bormasdan</span></h1>
+        <h1 className="flex justify-center text-xl uppercase font-bold mb-1 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>3 oyga</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>bormasdan</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
-          <h2 className="text-[22px] font-semibold mb-4 uppercase">
-            <span className='text-[24px]'>100% sertifikatli bo'lish va</span> <br /> <span>erkin gapira olish mumkinmi?</span>
+          <h2 className="font-semibold mb-4 uppercase">
+            <span className='text-[23px]'>100% sertifikatli bo'lish va</span> <br /> <span className='text-[21px]'>erkin gapira olish mumkinmi?</span>
           </h2>
           <p className="text-[15px] mb-4">
             3 kunlik bepul online masterklassda bilib olasiz. <br />
@@ -59,7 +59,7 @@ export default function MasterclassPage1() {
             </button>
           </div>
           <h3 className='text-2xl mb-1 text-red-500'>BEPUL <del>500.000 SO'M</del></h3>
-          <h3 className='mb-2 text-[15px] bg-red-500 inline-block px-2 text-white rounded-md'>
+          <h3 className='mb-2 text-[15px] bg-green-500 inline-block px-2 text-white rounded-md'>
             Ro'yxatdan o'tganlar uchun sovg'a
           </h3>
           <div className='flex justify-center items-center gap-2'>
