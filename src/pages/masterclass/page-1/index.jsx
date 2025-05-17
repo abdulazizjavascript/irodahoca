@@ -44,6 +44,7 @@ export default function MasterclassPage1() {
             rel="preload"
             className="mx-auto rounded-3xl"
             alt="Irodahoca"
+            height="240px"
             width="300px"
             fetchPriority='high'
             effect="blur"
