@@ -59,9 +59,9 @@ export default function MasterclassPage1() {
               <Timer minute={2} className='text-xl font-bold' />
             </button>
           </div>
-          <h3 className='text-2xl mb-1 text-red-500'>BEPUL <del>500.000 SO'M</del></h3>
+          <h3 className='text-xl mb-1 text-red-500'>BEPUL <del>500.000 SO'M</del></h3>
           <h3 className='mb-2 text-[15px] bg-green-500 inline-block px-2 text-white rounded-md'>
-            Ro'yxatdan o'tganlar uchun sovg'a
+            Telegramda o'yxatdan o'tganlar uchun sovg'a
           </h3>
           <div className='flex justify-center items-center gap-2'>
             <div>
