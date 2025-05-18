@@ -23,7 +23,7 @@ export default function Telegram() {
               Oxirgi qadam qoldi!
             </h1>
             <p className="text-[17px] md:text-2xl text-gray-600 max-w-xl">
-              Masterklassda qatnashish uchun quyidagi "TELEGRAMGA O'TISH" tugmasini bosing.
+              Masterklassda qatnashish uchun quyidagi <br /> "TELEGRAMGA O'TISH" tugmasini bosing.
             </p>
             {/* Arrows and Button */}
             <div className="relative pt-3 pb-4">
