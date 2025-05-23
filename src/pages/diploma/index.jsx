@@ -39,8 +39,8 @@ export default function DiplomaPage() {
       <div className="max-w-md w-full">
         <div className="mb-3 text-center">
           <span>Turk tili bo'yicha O'zbekistondagi eng katta</span>
-          <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500">SERTIFIKAT</span> <span className="text-red-500">SIRLARI</span></h1>
-          <span>nomli vibenarimizning 2-kunida qatnashganingiz uchun tashakkur. Ertaga ham sizni kutamiz 😍</span>
+          <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500">TURK TILIDA BEMALOL GAPLASHISH</span> <span className="text-red-500">VA 100% SERTIFIKATLI BO'LISH</span></h1>
+          <span>nomli masterklassda qatnashganligi uchun. Siz kurslarimizga ham kutib qolamiz 😍</span>
           <h1 className='mt-3 font-bold'>Marhamat, ism familiyangizni kiritib diplomingizni olishingiz mumkin</h1>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">

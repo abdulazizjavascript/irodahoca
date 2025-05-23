@@ -20,13 +20,11 @@ const DiplomaView = ( { name, diplomaRef } ) => {
       </div>
 
       {/* Certificate Title */}
-      <div className="mb-20 text-center text-white">
+      <div className="text-center">
         <h1 className="mb-8 text-8xl font-bold text-yellow-500">DIPLOM</h1>
-        <h2>
-          <span className="text-xl"> Endi siz </span>
-          <span className="text-green-500 text-3xl font-bold">SERTIFIKAT</span> <span className="text-red-500 text-3xl font-bold">SIRLARI</span>
-          <span className="text-xl"> ni bilasiz</span>
-        </h2>
+        <p className="text-xl text-white"> Turk tili bo'yicha O'zbekistondagi eng katta </p>
+        <h2 className="text-3xl text-white font-bold mb-1"><span className="text-green-500">TURK TILIDA BEMALOL GAPLASHISH</span> <span className="text-red-500">VA 100% SERTIFIKATLI BO'LISH</span></h2>
+        <p className="text-xl text-white">nomli masterklassning 2-kunida ishtirok etganligi uchun </p>
       </div>
 
       {/* Content */}
@@ -36,7 +34,7 @@ const DiplomaView = ( { name, diplomaRef } ) => {
         </h1>
         <div className="mx-28 h-[1px] bg-white"></div>
         <p className="text-xl text-white">
-          Turk tilini o'rganib, 2025-yilda turk tilidan sertifikatni 100% naqd qilishingiz tilakdoshimiz !
+          Turk tilida bemalol gaplashishingiz va sertifikatni 100% naqd qilishingiz tilakdoshimiz !
         </p>
       </div>
 
