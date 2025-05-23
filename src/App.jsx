@@ -5,7 +5,7 @@ import InstagramPhoto from "./pages/instagram-photo"
 import Telegram from "./pages/telegram"
 import CertificatePage from "./pages/certificate"
 import ByePage from "./pages/bye"
-// import DiplomaPage from "./pages/diploma"
+import DiplomaPage from "./pages/diploma"
 // import TashakkurnomaPage from "./pages/tashakkurnoma"
 // import VebinarPage from "./pages/vebinar"
 import GraduationPage from "./pages/graduation"
@@ -24,7 +24,7 @@ const App = () => {
         <Route path='ins' element={<InstagramPhoto />} />
         <Route path='telegram' element={<Telegram />} />
         <Route path='certificate' element={<CertificatePage />} />
-        {/* <Route path='diploma' element={<DiplomaPage />} /> */}
+        <Route path='diploma' element={<DiplomaPage />} />
         <Route path='bye' element={<ByePage />} />
         {/* <Route path='tashakkurnoma' element={<TashakkurnomaPage />} /> */}
         <Route path='graduation' element={<GraduationPage />} />
