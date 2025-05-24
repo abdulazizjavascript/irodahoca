@@ -37,7 +37,7 @@ export default function TashakkurnomaPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-md w-full">
-        <div>
+        <div className="mb-3 text-center">
           <span>Turk tili bo'yicha O'zbekistondagi eng katta</span>
           <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500">TURK TILIDA BEMALOL GAPLASHISH</span> <span className="text-red-500">VA 100% SERTIFIKATLI BO'LISH</span></h1>
           <span>nomli masterklassda qatnashganingiz uchun rahmat. Siz kurslarimizga ham kutib qolamiz 😍</span>
