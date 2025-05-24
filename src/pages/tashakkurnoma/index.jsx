@@ -37,11 +37,11 @@ export default function TashakkurnomaPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-md w-full">
-        <div className="mb-3 text-center">
-          <span>Turk tili bo'yicha O'zbekistondagi eng katta</span>
-          <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500">SERTIFIKAT</span> <span className="text-red-500">SIRLARI</span></h1>
-          <span>nomli vibenarimizning 3-kunida qatnashganingiz uchun tashakkur. Vibenarimiz o'z yakuniga yetdi.</span>
-          <h1 className='mt-3 font-bold'>Marhamat, ism familiyangizni kiritib sertifikatingizni olishingiz mumkin</h1>
+        <div className="text-center">
+          <h1 className="mb-8 text-8xl font-bold text-yellow-500">TASHAKKURNOMA</h1>
+          <p className="text-xl text-white"> Turk tili bo'yicha O'zbekistondagi eng katta </p>
+          <h2 className="text-3xl text-white font-bold mb-1"><span className="text-green-500">TURK TILIDA BEMALOL GAPLASHISH</span> <span className="text-red-500">VA 100% SERTIFIKATLI BO'LISH</span></h2>
+          <p className="text-xl text-white">nomli masterklassning 2-kunida ishtirok etganligi uchun </p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
