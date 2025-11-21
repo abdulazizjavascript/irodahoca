@@ -36,7 +36,7 @@ export default function Page() {
             src={irodahoca} />
 
           <div className="flex items-center justify-center gap-4">
-            <button onClick={() => { ReactPixel.track( 'Lead' ); }} className="flex -mt-14 z-10 font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
+            <button onClick={() => { ReactPixel.track( 'Lead' ); window.location.href = 'https://t.me/irodahoca_admin'; }} className="flex -mt-14 z-10 font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
               KURSGA YOZILISH
             </button>
           </div>
