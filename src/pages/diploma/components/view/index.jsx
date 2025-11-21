@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 const DiplomaView = ( { name, diplomaRef } ) => {
   return (
     <div ref={diplomaRef} className="fixed left-[10000px] top-[10000px] -z-10 py-8 font-condensed bg-[url('/uzturk-flag.png')] bg-cover bg-center w-[1123px] h-[794px] bg-white border-8 border-yellow-500 px-20 mx-auto">
+      
       {/* Border Decorations */}
       <div className="absolute top-0 left-0">
         <img className="-rotate-90" width="300px" src="/christmas-corner.png" alt="christmas-corner" />

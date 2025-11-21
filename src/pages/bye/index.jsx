@@ -30,6 +30,7 @@ export default function ByePage() {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="text-center">
         <h1 className="mb-3 text-2xl font-bold text-red-500">YUKLAB OLISH JARAYONI YAKUNIGA YETDI</h1>
+        <p className="text-xl">Biroz kuting va galleriyangizni tekshiring</p>
       </div>
     </div>
   )

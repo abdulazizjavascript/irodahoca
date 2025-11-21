@@ -12,6 +12,7 @@ import GraduationPage from "./pages/graduation"
 import LevelGraduationPage from "./pages/level-graduation"
 import MasterclassPage1 from "./pages/masterclass/page-1"
 import MasterclassPage2 from "./pages/masterclass/page-2"
+import VaucherPage from "./pages/vaucher"
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Route path="kurs" element={<HomePage />} />
         <Route path="masterclass/1" element={<MasterclassPage1 />} />
         <Route path="masterclass/2" element={<MasterclassPage2 />} />
-        <Route index element={<MasterclassPage1 />} />
+        {/* <Route index element={<MasterclassPage1 />} /> */}
         <Route path='ins' element={<InstagramPhoto />} />
         <Route path='telegram' element={<Telegram />} />
         <Route path='certificate' element={<CertificatePage />} />
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='bye' element={<ByePage />} />
         <Route path='tashakkurnoma' element={<TashakkurnomaPage />} />
         <Route path='graduation' element={<GraduationPage />} />
+        <Route path='vaucher' element={<VaucherPage />} />
         <Route path='level-graduation' element={<LevelGraduationPage />} />
       </Routes>
     </BrowserRouter>
