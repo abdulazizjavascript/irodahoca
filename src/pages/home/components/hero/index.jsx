@@ -38,7 +38,7 @@ export default function Page() {
             src={irodahoca} />
 
           <div className="flex items-center justify-center gap-4">
-            <button onClick={() => { ReactPixel.track( 'Complete registration' ); window.location.href = 'https://t.me/irodahoca_support_bot?start=kurs-sales'; }} className="flex -mt-14 z-10 font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
+            <button onClick={() => { ReactPixel.track( 'Complete registration' ); window.location.href = 'https://t.me/irodahoca_support_bot?start=sales-site'; }} className="flex -mt-14 z-10 font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
               RO'YXATDAN O'TISH
             </button>
           </div>
@@ -63,7 +63,7 @@ export default function Page() {
             </ul>
           </div>
           <div className="flex items-center justify-center gap-4 mt-10">
-            <button onClick={() => { ReactPixel.track( 'Complete registration' ); window.location.href = 'https://t.me/irodahoca_support_bot?start=kurs-sales'; }} className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
+            <button onClick={() => { ReactPixel.track( 'Complete registration' ); window.location.href = 'https://t.me/irodahoca_support_bot?start=sales-site'; }} className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
               RO'YXATDAN O'TISH
             </button>
           </div>
