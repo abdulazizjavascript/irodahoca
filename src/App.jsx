@@ -21,7 +21,7 @@ const App = () => {
         <Route path="kurs" element={<HomePage />} />
         <Route path="masterclass/1" element={<MasterclassPage1 />} />
         <Route path="masterclass/2" element={<MasterclassPage2 />} />
-        {/* <Route index element={<MasterclassPage1 />} /> */}
+        <Route index element={<HomePage />} />
         <Route path='ins' element={<InstagramPhoto />} />
         <Route path='telegram' element={<Telegram />} />
         <Route path='certificate' element={<CertificatePage />} />
