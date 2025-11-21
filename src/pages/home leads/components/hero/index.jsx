@@ -8,14 +8,13 @@ import irodahoca from '../../../../assets/irodahoca.png'
 
 export default function Page() {
 
-  ReactPixel.init( '715181871137398' );
+  ReactPixel.init( '3683295165311365' );
   ReactPixel.pageView(); // For page load
   ReactPixel.track( 'PageView' ); // Custom events
 
   return (
     <section className="bg-pink-100">
       <div className="container pt-4 pb-8 text-center">
-        
         <h3 className="text-[12px] font-bold mb-4">
           Turk tili bo'yicha 5 yillik tajriba va xalqaro sertifikatga ega
           <br /> <span className='text-[12.5px]'>C1 darajali filolog, UZTURK markazi asoschi IrodaHoca</span>
@@ -39,7 +38,7 @@ export default function Page() {
             src={irodahoca} />
 
           <div className="flex items-center justify-center gap-4">
-            <button onClick={() => { ReactPixel.track( 'Complete registration' ); window.location.href = 'https://t.me/irodahoca_support_bot?start=sales-site'; }} className="flex -mt-14 z-10 font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
+            <button onClick={() => { ReactPixel.track( 'Lead' ); window.location.href = 'https://t.me/irodahoca_support_bot?start=kurs'; }} className="flex -mt-14 z-10 font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
               RO'YXATDAN O'TISH
             </button>
           </div>
@@ -64,7 +63,7 @@ export default function Page() {
             </ul>
           </div>
           <div className="flex items-center justify-center gap-4 mt-10">
-            <button onClick={() => { ReactPixel.track( 'Complete registration' ); window.location.href = 'https://t.me/irodahoca_support_bot?start=sales-site'; }} className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
+            <button onClick={() => { ReactPixel.track( 'Lead' ); window.location.href = 'https://t.me/irodahoca_support_bot?start=kurs'; }} className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow">
               RO'YXATDAN O'TISH
             </button>
           </div>

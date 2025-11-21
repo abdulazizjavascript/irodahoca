@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import HomePage from "./pages/home"
+import HomeLeadsPage from "./pages/home leads"
 import InstagramPhoto from "./pages/instagram-photo"
 import Telegram from "./pages/telegram"
 import CertificatePage from "./pages/certificate"
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="masterclass/1" element={<MasterclassPage1 />} />
         <Route path="masterclass/2" element={<MasterclassPage2 />} />
         <Route index element={<HomePage />} />
+        <Route path='leads' element={<HomeLeadsPage />} />
         <Route path='ins' element={<InstagramPhoto />} />
         <Route path='telegram' element={<Telegram />} />
         <Route path='certificate' element={<CertificatePage />} />
