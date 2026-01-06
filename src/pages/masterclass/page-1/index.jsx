@@ -23,7 +23,7 @@ export default function MasterclassPage1() {
     <div>
       <div className="container mx-auto px-3 pt-4 pb-8 text-center">
         <div className="inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
-          22-23-24-may | soat 20:30 | online masterklass
+          16-17-18-yanvar | soat 20:00 | online bepul dars
         </div>
         <h2 className="text-[25px] font-semibold uppercase">
           Turk tilini 0 dan o'rganib
@@ -36,7 +36,7 @@ export default function MasterclassPage1() {
             <span className='text-[23px]'>100% sertifikatli bo'lish va</span> <br /> <span className='text-[21px]'>erkin gapira olish mumkinmi?</span>
           </h2>
           <p className="text-[15px] mb-4">
-            3 kunlik bepul online masterklassda bilib olasiz. <br />
+            3 kunlik bepul online darsda bilib olasiz. <br />
             Hoziroq quyidagi tugmani bosib ro'yxatdan o'ting.
           </p>
         </div>

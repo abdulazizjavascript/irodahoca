@@ -23,7 +23,7 @@ export default function Telegram() {
               Oxirgi qadam qoldi!
             </h1>
             <p className="text-[17px] md:text-2xl text-gray-600 max-w-xl">
-              Masterklassda qatnashish uchun quyidagi <br /> "TELEGRAMGA O'TISH" tugmasini bosing.
+              Bepul online darsga qatnashish uchun quyidagi <br /> "TELEGRAMGA O'TISH" tugmasini bosing.
             </p>
             {/* Arrows and Button */}
             <div className="relative pt-3 pb-4">
@@ -41,7 +41,7 @@ export default function Telegram() {
               <button
                 className="flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl"
                 onClick={() => {
-                  window.location.href = 'https://t.me/turktili_masterklass';
+                  window.location.href = 'https://t.me/turktili_bepul_dars';
                   ReactPixel.track( "Lead" );
                 }}
               >
