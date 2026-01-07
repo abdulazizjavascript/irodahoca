@@ -9,6 +9,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import irodahoca from '../../../assets/irodahoca-new-year-1.webp'
 import Timer from '../../../components/timer'
+import Gifts from '../../../components/gifts';
 
 export default function MasterclassPage1() {
 
@@ -25,15 +26,15 @@ export default function MasterclassPage1() {
         <div className="inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
           16-17-18-yanvar | soat 20:00 | online bepul dars
         </div>
-        <h2 className="text-[25px] font-semibold uppercase">
-          Turk tilini 0 dan o'rganib
+        <h2 className="text-[28px] font-semibold uppercase">
+          Qanday qilib turk tilini
         </h2>
         <h1 className="flex justify-center text-xl font-bold mb-1 text-white">
-          <span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>2-3 OY ICHIDA</span>
-          <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>OSONLIK BILAN</span></h1>
+          <span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>0 DAN O'RGANIB</span>
+          <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>ATIGI 2-3 OYDA</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
           <h2 className="font-semibold mb-4 uppercase">
-            <span className='text-[23px]'>100% sertifikatli bo'lish va</span> <br /> <span className='text-[21px]'>erkin gapira olish mumkinmi?</span>
+            <span className='text-[24px]'>100% sertifikatli bo'lish va</span> <br /> <span className='text-[23.5px]'>erkin gapira olish mumkin?</span>
           </h2>
           <p className="text-[15px] mb-4">
             3 kunlik bepul online darsda bilib olasiz. <br />
@@ -61,21 +62,8 @@ export default function MasterclassPage1() {
               <Timer minute={2} className='text-xl font-bold' />
             </button>
           </div>
-          <h3 className='text-xl mb-1 text-red-500'>BEPUL <del>500.000 SO'M</del></h3>
-          <h3 className='mb-2 text-[15px] bg-green-500 inline-block px-2 text-white rounded-md'>
-            Ro'yxatdan o'tganlar uchun sovg'a
-          </h3>
-          <div className='flex justify-center items-center gap-2'>
-            <div>
-              <span className='text-4xl'>🎁</span>
-            </div>
-            <div>
-              <h3 className='text-[18px]'>
-                "Turkcha so'zlashamiz kitobi"
-              </h3>
-              <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
-            </div>
-          </div>
+          <h3 className='text-[30px] font-bold mb-1 text-red-500'>BEPUL <del>500.000 SO'M</del></h3>
+          <Gifts />
         </div>
       </div>
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />

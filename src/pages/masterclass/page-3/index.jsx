@@ -9,6 +9,7 @@ import RegisterModal from '../../../components/registeration-modal'
 import Timer from '../../../components/timer'
 
 import irodahoca from '../../../assets/irodahoca-magistr-resize.png'
+import Gifts from '../../../components/gifts';
 
 export default function MasterclassPage3() {
 
@@ -71,21 +72,8 @@ export default function MasterclassPage3() {
               <Timer minute={2} className='text-xl font-bold' />
             </button>
           </div>
-          <h3 className='mb-2 text-[15px] bg-red-500 inline-block px-2 text-white rounded-md'>
-            Ro'yxatdan o'tganlar uchun sovg'a
-          </h3>
-
-          <div className='relative z-10 flex justify-center items-center gap-2'>
-            <div>
-              <span className='text-4xl'>🎁</span>
-            </div>
-            <div>
-              <h3 className='text-[18px]'>
-                "Turkcha so'zlashamiz kitobi"
-              </h3>
-              <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
-            </div>
-          </div>
+          <h3 className='text-[30px] font-bold mb-1 text-red-500'>BEPUL <del>500.000 SO'M</del></h3>
+          <Gifts titleColor="bg-red-500" />
         </div>
       </div>
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />

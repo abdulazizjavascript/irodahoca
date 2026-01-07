@@ -9,6 +9,7 @@ import RegisterModal from '../../../components/registeration-modal'
 import Timer from '../../../components/timer'
 
 import irodahoca from '../../../assets/irodahoca-sm-size.webp'
+import Gifts from '../../../components/gifts';
 
 export default function MasterclassPage2() {
 
@@ -22,22 +23,22 @@ export default function MasterclassPage2() {
     <div>
       <div className="container mx-auto px-3 pt-4 pb-8 text-center">
         <div className="inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
-          22-23-24-may | soat 20:30 | bepul masterklass
+          16-17-18-yanvar | soat 20:00 | bepul online dars
         </div>
-        <h2 className="text-[22px] font-semibold mb-2 uppercase">
-          Bu texnikalar orqali
+        <h2 className="font-semibold mb-2 uppercase">
+          <span className='text-[25px]'>O'quvchilarimiz turk tilini</span> <br /> <span className='text-[17px]'>bizning maxsus texnikalar yordamida</span>
         </h2>
-        <h1 className="flex justify-center text-[19px] uppercase font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>o'quvchilarimiz</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>0 dan 2.5 oyda</span></h1>
+        <h1 className="flex justify-center text-[20px] uppercase font-bold mb-3 text-white"><span className='px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500'>0 dan o'rganib</span> <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>atigi 2-3 oyda</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
           <h2 className="font-semibold mb-4 uppercase">
-            <span className='text-[20px]'>Turklardek gapirishni o'rganib</span> <br />
-            <span className='text-[23px]'>B2 sertifikatli bo'lishyapti.</span>
+            <span className='text-[17.5px]'>turklardek gapirishni o'rganishyapti</span> <br />
+            <span className='text-[15.2px]'>va til sertifikatlarini qo'lga kiritishyapti.</span>
           </h2>
           <p className="mb-4">
-            <span className='text-[13px]'>
-              Bu texnikalar 3 kunlik bepul masterklassda o'rgatiladi.
+            <span className='text-[15px]'>
+              Bu texnikalar 3 kunlik bepul darsimizda o'rgatiladi.
             </span> <br />
-            <span className="text-[14px]">
+            <span className="text-[15px]">
               Hoziroq quyidagi tugmani bosib ro'yxatdan o'ting.
             </span>
           </p>
@@ -65,20 +66,8 @@ export default function MasterclassPage2() {
               <Timer minute={2} className='text-xl font-bold' />
             </button>
           </div>
-          <h3 className='mb-2 text-[15px] bg-red-500 inline-block px-2 text-white rounded-md'>
-            Ro'yxatdan o'tganlar uchun sovg'a
-          </h3>
-          <div className='relative z-10 flex justify-center items-center gap-2'>
-            <div>
-              <span className='text-4xl'>🎁</span>
-            </div>
-            <div>
-              <h3 className='text-[18px]'>
-                "Turkcha so'zlashamiz kitobi"
-              </h3>
-              <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
-            </div>
-          </div>
+          <h3 className='text-[30px] font-bold mb-1 text-red-500'>BEPUL <del>500.000 SO'M</del></h3>
+          <Gifts titleColor="bg-red-500"/>
         </div>
       </div>
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />
