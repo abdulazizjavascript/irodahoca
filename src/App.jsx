@@ -13,6 +13,7 @@ import GraduationPage from "./pages/graduation"
 import LevelGraduationPage from "./pages/level-graduation"
 import MasterclassPage1 from "./pages/masterclass/page-1"
 import MasterclassPage2 from "./pages/masterclass/page-2"
+import MasterclassPage3 from "./pages/masterclass/page-3"
 import VaucherPage from "./pages/vaucher"
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="kurs" element={<HomePage />} />
         <Route path="masterclass/1" element={<MasterclassPage1 />} />
         <Route path="masterclass/2" element={<MasterclassPage2 />} />
+        <Route path="masterclass/3" element={<MasterclassPage3 />} />
         <Route index element={<HomePage />} />
         <Route path='leads' element={<HomeLeadsPage />} />
         <Route path='ins' element={<InstagramPhoto />} />
