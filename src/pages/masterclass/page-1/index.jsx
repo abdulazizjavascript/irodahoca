@@ -7,7 +7,7 @@ import ReactPixel from 'react-facebook-pixel';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-import irodahoca from '../../../assets/irodahoca-new-year-1.webp'
+import irodahoca from '../../../assets/irodahoca-strelka-2.png'
 import Timer from '../../../components/timer'
 import Gifts from '../../../components/gifts';
 
@@ -21,7 +21,7 @@ export default function MasterclassPage1() {
   const [ isModalOpen, setIsModalOpen ] = useState( false )
 
   return (
-    <div>
+    <div className='bg-white'>
       <div className="container mx-auto px-3 pt-4 pb-8 text-center">
         <div className="inline-block rounded-lg border border-black border-dashed px-2 py-2 mb-2">
           16-17-18-yanvar | soat 20:00 | online bepul dars
@@ -34,10 +34,16 @@ export default function MasterclassPage1() {
           <span className='px-3 py-1 bg-red-600 rounded-tr-lg rounded-br-lg'>ATIGI 2-3 OYDA</span></h1>
         <div className="max-w-3xl mx-auto mb-2">
           <h2 className="font-semibold mb-4 uppercase">
-            <span className='text-[24px]'>100% sertifikatli bo'lish va</span> <br /> <span className='text-[23.5px]'>erkin gapira olish mumkin?</span>
+            <span className='text-[20px]'>100% sertifikatli bo'lish mumkin?</span>
           </h2>
+          <p className="text-[19.5px] mb-2">
+            3 kunlik bepul online darsda bilib olasiz.
+          </p>
+          <p className="text-[12.5px] mb-2 bg-yellow-200 inline-block px-2 py-1 rounded-lg">
+            Turk tili sertifikati magistratura va doktoranturaga 100% o'tadi <br />
+            Bakalavr imtihoni 2-bloki chet tili bo'lsa maksimal ball beradi.
+          </p>
           <p className="text-[15px] mb-4">
-            3 kunlik bepul online darsda bilib olasiz. <br />
             Hoziroq quyidagi tugmani bosib ro'yxatdan o'ting.
           </p>
         </div>
