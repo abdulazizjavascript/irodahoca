@@ -3,16 +3,11 @@
 import { ArrowDown } from 'lucide-react'
 // import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-import ReactPixel from 'react-facebook-pixel';
 import Gifts from '../../components/gifts';
 
 // import irodahoca from '../../assets/irodahoca-new-sm.webp'
 
 export default function Telegram() {
-
-  ReactPixel.init( '1194225341879374' );
-  ReactPixel.pageView(); // For page load
-  ReactPixel.track( 'PageView' ); // Custom events
 
   return (
     <div className="bg-amber-50 flex h-screen items-center justify-center">
@@ -42,8 +37,7 @@ export default function Telegram() {
               <button
                 className="flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl"
                 onClick={() => {
-                  window.location.href = 'https://t.me/turktili_bepul_dars';
-                  ReactPixel.track( "Lead" );
+                  window.location.href = 'https://t.me/turktili_bepul_dars/2';
                 }}
               >
                 <span>TELEGRAMGA O'TISH</span>
