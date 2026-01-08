@@ -4,6 +4,7 @@ import { ArrowDown } from 'lucide-react'
 // import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import ReactPixel from 'react-facebook-pixel';
+import Gifts from '../../components/gifts';
 
 // import irodahoca from '../../assets/irodahoca-new-sm.webp'
 
@@ -19,11 +20,11 @@ export default function Telegram() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
-            <h1 className="bg-red-500 py-3 rounded-lg text-white text-3xl font-condensed uppercase md:text-6xl font-bold">
-              Oxirgi qadam qoldi!
+            <h1 className="inline-block bg-red-500 p-3 rounded-lg text-white text-lg font-condensed uppercase md:text-6xl font-bold">
+              BEPUL DARSGACHA Oxirgi qadam qoldi
             </h1>
             <p className="text-[17px] md:text-2xl text-gray-600 max-w-xl">
-              Bepul online darsga qatnashish uchun quyidagi <br /> "TELEGRAMGA O'TISH" tugmasini bosing.
+              Bepul online darsimizga qatnashish uchun <br /> "TELEGRAMGA O'TISH" tugmasini bosing.
             </p>
             {/* Arrows and Button */}
             <div className="relative pt-3 pb-4">
@@ -54,38 +55,10 @@ export default function Telegram() {
             </p>
           </div>
 
-          <div className='text-center'>
-            <h3 className='mb-2 text-[14px] bg-green-500 inline-block px-2 text-white rounded-sm'>
-              Quyidagi sovg'a sizni telegramda kutib turibdi
-            </h3>
-            <div className='relative z-10 flex justify-center items-center gap-2'>
-              <div>
-                <span className='text-4xl'>🎁</span>
-              </div>
-              <div>
-                <h3 className='text-[18px]'>
-                  "Turkcha so'zlashamiz kitobi"
-                </h3>
-                <p className='text-[11.5px]'>Turk tilida eng ko'p ishlatiladigan 500 ta gap</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Image */}
-          {/* <div className="w-full md:w-1/2 relative">
-            <div className="relative aspect-square max-w-lg mx-auto">
-              <LazyLoadImage
-                src={irodahoca}
-                alt="Irodahoca"
-                className="relative z-10 rounded-full w-full"
-                fetchPriority='high'
-                effect="blur"
-                wrapperProps={{
-                  style: { transitionDelay: "0.5s" },
-                }}
-              />
-            </div>
-          </div> */}
+          <h3 className='mb-2 text-[14px] bg-green-500 inline-block p-2 text-white rounded-md'>
+            🎁 Ushbu sovg'alar sizni telegramda kutyapti 🥳
+          </h3>
+          <Gifts titleClassName="hidden" />
         </div>
       </main >
     </div >

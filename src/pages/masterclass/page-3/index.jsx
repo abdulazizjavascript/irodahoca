@@ -13,7 +13,7 @@ import Gifts from '../../../components/gifts';
 
 export default function MasterclassPage3() {
 
-  ReactPixel.init( '559470840532153' );
+  ReactPixel.init( '1636865504168325' );
   ReactPixel.pageView(); // For page load
   ReactPixel.track( 'PageView' ); // Custom events
 
@@ -64,7 +64,7 @@ export default function MasterclassPage3() {
             <button
               onClick={() => {
                 setIsModalOpen( true );
-                ReactPixel.track( "Lead" );
+                ReactPixel.track( "Complete Registration" );
               }}
               className="flex items-center gap-2 font-bold z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
@@ -73,7 +73,7 @@ export default function MasterclassPage3() {
             </button>
           </div>
           <h3 className='text-[30px] font-bold mb-1 text-red-500'>BEPUL <del>500.000 SO'M</del></h3>
-          <Gifts titleColor="bg-red-500" />
+          <Gifts titleClassName="bg-red-500" />
         </div>
       </div>
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen( false )} />
