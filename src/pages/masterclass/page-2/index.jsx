@@ -58,7 +58,6 @@ export default function MasterclassPage2() {
             <button
               onClick={() => {
                 setIsModalOpen( true );
-                ReactPixel.track( "Complete Registration" );
               }}
               className="flex items-center gap-2 font-bold -mt-14 z-10 bg-green-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >

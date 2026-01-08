@@ -55,9 +55,9 @@ export default function MasterclassPage1() {
 
           <div className="flex items-center justify-center gap-4 mb-1">
             <button
-              onClick={() => { setIsModalOpen( true ); ReactPixel.track( 'Complete Registration' ); }}
+              onClick={() => { setIsModalOpen( true ) }}
               className="flex items-center gap-2 font-bold -mt-10 z-10 bg-red-600 text-white px-12 py-4 rounded-lg text-xl hover:bg-red-700 transition-colors"
-            > 
+            >
               <span>RO'YXATDAN O'TISH</span>
               <Timer minute={2} className='text-xl font-bold' />
             </button>

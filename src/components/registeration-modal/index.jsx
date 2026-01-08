@@ -8,6 +8,8 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import Timer from '../timer'
 
+import ReactPixel from 'react-facebook-pixel';
+
 export default function RegisterModal( { isOpen, onClose } ) {
   const [ showModal, setShowModal ] = useState( false )
   const [ loading, setLoading ] = useState( false );
@@ -35,7 +37,7 @@ export default function RegisterModal( { isOpen, onClose } ) {
 
       data.phone = data.phone.replace( /[^\d]/g, '' ).replace( /^998(\d{2})(\d{7})$/, '+998$1$2' );
 
-      console.log( data );
+      ReactPixel.track( "CompleteRegistration" );
 
       axios.post( 'https://irodahoca-production.up.railway.app/register', data );
 
