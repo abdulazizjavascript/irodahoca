@@ -2,15 +2,10 @@
 
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-import ReactPixel from 'react-facebook-pixel';
-
 import irodahoca from '../../../../assets/irodahoca.png'
 
 export default function Page() {
 
-  ReactPixel.init( '3683295165311365' );
-  ReactPixel.pageView(); // For page load
-  ReactPixel.track( 'PageView' ); // Custom events
 
   return (
     <section className="bg-pink-100">
