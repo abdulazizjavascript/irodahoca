@@ -13,7 +13,7 @@ import Gifts from '../../../components/gifts';
 
 export default function MasterclassPage2() {
 
-  ReactPixel.init( '845233971722269' );
+  ReactPixel.init( '1636865504168325' );
   ReactPixel.pageView(); // For page load
   ReactPixel.track( 'PageView' ); // Custom events
 
