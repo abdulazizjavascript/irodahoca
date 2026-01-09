@@ -40,7 +40,7 @@ export default function RegisterModal( { isOpen, onClose } ) {
       ReactPixel.track( "CompleteRegistration" );
 
       axios.post( 'https://irodahoca-production.up.railway.app/register', data );
-
+ 
       navigate( '/telegram' )
 
       // window.location.href = "https://t.me/turktili_masterklass/7"
