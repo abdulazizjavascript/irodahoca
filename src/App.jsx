@@ -15,6 +15,7 @@ import MasterclassPage1 from "./pages/masterclass/page-1"
 import MasterclassPage2 from "./pages/masterclass/page-2"
 import MasterclassPage3 from "./pages/masterclass/page-3"
 import VaucherPage from "./pages/vaucher"
+import ParticipantPage from "./pages/participant"
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
         <Route path='bye' element={<ByePage />} />
         <Route path='tashakkurnoma' element={<TashakkurnomaPage />} />
         <Route path='graduation' element={<GraduationPage />} />
+        <Route path='participant' element={<ParticipantPage />} />
         <Route path='vaucher' element={<VaucherPage />} />
         <Route path='level-graduation' element={<LevelGraduationPage />} />
       </Routes>
