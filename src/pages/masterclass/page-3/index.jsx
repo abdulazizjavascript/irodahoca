@@ -8,7 +8,7 @@ import ReactPixel from 'react-facebook-pixel';
 import RegisterModal from '../../../components/registeration-modal'
 import Timer from '../../../components/timer'
 
-import irodahoca from '../../../assets/irodahoca-magistr-resize.png'
+import irodahoca from '../../../assets/irodahoca-magistr-resize.webp'
 import Gifts from '../../../components/gifts';
 
 export default function MasterclassPage3() {

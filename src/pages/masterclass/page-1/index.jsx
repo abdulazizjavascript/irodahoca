@@ -7,7 +7,7 @@ import ReactPixel from 'react-facebook-pixel';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-import irodahoca from '../../../assets/irodahoca-strelka-2.png'
+import irodahoca from '../../../assets/irodahoca-strelka-2.webp'
 import Timer from '../../../components/timer'
 import Gifts from '../../../components/gifts';
 
