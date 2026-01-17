@@ -39,7 +39,7 @@ export default function CertificatePage() {
       <div className="max-w-md w-full">
         <div className="mb-3 text-center">
           <span>Turk tili bo'yicha O'zbekistondagi eng katta</span>
-          <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500">TURK TILIDA BEMALOL GAPLASHISH</span> <span className="text-red-500">VA 100% SERTIFIKATLI BO'LISH</span></h1>
+          <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500">TURK TILIDA 0 DAN 2-3 OYDA BEMALOL GAPLASHISH</span> <span className="text-red-500">VA 100% SERTIFIKATLI BO'LISH</span></h1>
           <span>nomli masterklassda qatnashganligi uchun. Siz kurslarimizga ham kutib qolamiz 😍</span>
           {/* <span>nomli vibenarimizning 1-kunida qatnashganingiz uchun tashakkur. Qolgan kunlarda ham sizni kutamiz 😍</span> */}
           <h1 className='mt-3 font-bold'>Marhamat, ism-familiyangizni kiritib sertifikatingizni olishingiz mumkin.</h1>
