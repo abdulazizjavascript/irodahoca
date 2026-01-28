@@ -15,15 +15,15 @@ export default function Admin() {
           {/* Text Content */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
             <h1 className="inline-block p-3 rounded-lg text-lg font-condensed uppercase md:text-6xl font-bold">
-              Uraaaa tabriklayman 🥳 kursimizga muvaffaqqiyatli ro'yxatdan
-              o'tdingiz
+              Uraaaa tabriklayman 🥳 kursimizga <br /> muvaffaqqiyatli
+              ro'yxatdan o'tdingiz
             </h1>
             <h1 className="inline-block bg-red-500 p-3 rounded-lg text-white text-lg font-condensed uppercase md:text-6xl font-bold">
               ⚠️ Faqatgina oxirgi qadam qoldi
             </h1>
             <p className="text-[17px] md:text-2xl text-gray-600 max-w-xl">
-              Quyidagi "Adminga yozish" tugmasini bosib adminimizga yozing.
-              Sizga tezda kurs haqidagi ma'lumotlarni telegramdan yuborib
+              Quyidagi "Adminga yozish" tugmasini bosib <br /> adminimizga yozing.
+              sizga tezda kurs haqidagi <br /> ma'lumotlarni telegramdan yuborib
               qo'yadilar.
             </p>
             {/* Arrows and Button */}
