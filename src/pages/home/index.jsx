@@ -2,7 +2,7 @@ import Hero from "./components/hero"
 
 const HomePage = () => {
   return (
-    <div className="font-roboto">
+    <div>
       <Hero />
     </div>
   )

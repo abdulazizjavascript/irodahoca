@@ -1,17 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useForm } from 'react-hook-form'
-import InputMask from 'react-input-mask'
-import { useEffect, useState } from 'react'
+import { useForm } from "react-hook-form";
+import InputMask from "react-input-mask";
+import { useEffect, useState } from "react";
 
-import PropTypes from 'prop-types'
-import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
-import Timer from '../timer'
+import PropTypes from "prop-types";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import Timer from "../timer";
 
-import ReactPixel from 'react-facebook-pixel';
+import ReactPixel from "react-facebook-pixel";
 
 export default function RegisterModal( { isOpen, onClose } ) {
-  const [ showModal, setShowModal ] = useState( false )
+  const [ showModal, setShowModal ] = useState( false );
   const [ loading, setLoading ] = useState( false );
   const navigate = useNavigate();
 
@@ -19,55 +19,56 @@ export default function RegisterModal( { isOpen, onClose } ) {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm()
+  } = useForm();
 
   useEffect( () => {
     if ( isOpen ) {
-      setShowModal( true )
+      setShowModal( true );
     } else {
       setTimeout( () => {
-        setShowModal( false )
-      }, 300 )
+        setShowModal( false );
+      }, 300 );
     }
-  }, [ isOpen ] )
+  }, [ isOpen ] );
 
   const onSubmit = async ( data ) => {
     try {
-      setLoading( true )
+      setLoading( true );
 
-      data.phone = data.phone.replace( /[^\d]/g, '' ).replace( /^998(\d{2})(\d{7})$/, '+998$1$2' );
+      data.phone = data.phone
+        .replace( /[^\d]/g, "" )
+        .replace( /^998(\d{2})(\d{7})$/, "+998$1$2" );
 
       ReactPixel.track( "CompleteRegistration" );
 
-      axios.post( 'https://irodahoca-production.up.railway.app/register', data );
- 
-      navigate( '/telegram' )
+      axios.post( "https://irodahoca-production.up.railway.app/register", data );
+
+      navigate( "/admin" );
 
       // window.location.href = "https://t.me/turktili_masterklass/7"
-
     } catch ( err ) {
-      console.log( err )
+      console.log( err );
     } finally {
-      setLoading( false )
+      setLoading( false );
     }
-  }
+  };
 
-  if ( !showModal ) return null
+  if ( !showModal ) return null;
 
   return (
     <div
       className={`fixed z-20 inset-0 flex items-center justify-center p-4 transition-all duration-300 ease-in-out ${isOpen
-        ? 'opacity-100 bg-black/50'
-        : 'opacity-0 bg-black/0 pointer-events-none'
+          ? "opacity-100 bg-black/50"
+          : "opacity-0 bg-black/0 pointer-events-none"
         }`}
       onClick={onClose}
     >
       <div
         className={`bg-white rounded-lg p-6 w-full max-w-md transition-all duration-300 ease-in-out ${isOpen
-          ? 'scale-100 opacity-100 translate-y-0'
-          : 'scale-95 opacity-0 translate-y-8'
+            ? "scale-100 opacity-100 translate-y-0"
+            : "scale-95 opacity-0 translate-y-8"
           }`}
-        onClick={e => e.stopPropagation()}
+        onClick={( e ) => e.stopPropagation()}
       >
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-2xl font-bold">Ro'yxatdan o'tish</h2>
@@ -93,11 +94,9 @@ export default function RegisterModal( { isOpen, onClose } ) {
 
         <form onSubmit={handleSubmit( onSubmit )} className="space-y-4">
           <div>
-            <label className="block text-lg font-medium mb-1">
-              Ismingiz
-            </label>
+            <label className="block text-lg font-medium mb-1">Ismingiz</label>
             <input
-              {...register( 'name', { required: 'Ismingizni kiriting' } )}
+              {...register( "name", { required: "Ismingizni kiriting" } )}
               className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none"
             />
             {errors.name && (
@@ -113,20 +112,28 @@ export default function RegisterModal( { isOpen, onClose } ) {
               // eslint-disable-next-line no-nonoctal-decimal-escape
               mask="+\9\98 (99) 999-99-99"
               maskPlaceholder="-"
-              {...register( 'phone', {
-                required: 'Telefon raqamingizni kiriting',
+              {...register( "phone", {
+                required: "Telefon raqamingizni kiriting",
                 pattern: {
                   value: /^\+998 \(\d{2}\) \d{3}-\d{2}-\d{2}$/,
-                  message: "Telefon raqamingizni to'g'ri kiriting"
-                }
+                  message: "Telefon raqamingizni to'g'ri kiriting",
+                },
               } )}
               className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none"
               placeholder="+998991234567"
             >
-              {( inputProps ) => <input {...inputProps} type="tel" placeholder="+998 (__) ___-__-__" />}
+              {( inputProps ) => (
+                <input
+                  {...inputProps}
+                  type="tel"
+                  placeholder="+998 (__) ___-__-__"
+                />
+              )}
             </InputMask>
             {errors.phone && (
-              <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
+              <p className="text-red-500 text-sm mt-1">
+                {errors.phone.message}
+              </p>
             )}
           </div>
 
@@ -136,38 +143,39 @@ export default function RegisterModal( { isOpen, onClose } ) {
               type="submit"
               className="flex disabled:opacity-75 items-center justify-center gap-2 w-full px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
             >
-              {loading ? <svg
-                className="w-5 h-5 animate-spin text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                ></circle>
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.963 7.963 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                ></path>
-              </svg> : null}
+              {loading ? (
+                <svg
+                  className="w-5 h-5 animate-spin text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.963 7.963 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+              ) : null}
               <span>Ro'yxatdan o'tish</span>
-              <Timer minute={1} className='text-md' />
+              <Timer minute={1} className="text-md" />
             </button>
           </div>
         </form>
-
       </div>
     </div>
-  )
+  );
 }
 
 RegisterModal.propTypes = {
   isOpen: PropTypes.boolean,
-  onClose: PropTypes.func
-}
+  onClose: PropTypes.func,
+};
