@@ -3,11 +3,17 @@
 import { ArrowDown } from "lucide-react";
 // import { LazyLoadImage } from 'react-lazy-load-image-component'
 
+import ReactPixel from "react-facebook-pixel";
+
 import Gifts from "../../components/gifts";
 
 // import irodahoca from '../../assets/irodahoca-new-sm.webp'
 
 export default function Admin() {
+  ReactPixel.init( "737186109151500" );
+  ReactPixel.pageView(); // For page load
+  ReactPixel.track( "PageView" ); // Custom events
+
   return (
     <div className="bg-white flex items-center justify-center">
       <main className="container mx-auto px-4 py-8 md:py-16">
@@ -22,9 +28,9 @@ export default function Admin() {
               ⚠️ Faqatgina oxirgi qadam qoldi
             </h1>
             <p className="text-[17px] md:text-2xl text-gray-600 max-w-xl">
-              Quyidagi "Adminga yozish" tugmasini bosib <br /> adminimizga yozing.
-              sizga tezda kurs haqidagi <br /> ma'lumotlarni telegramdan yuborib
-              qo'yadilar.
+              Quyidagi "Adminga yozish" tugmasini bosib <br /> adminimizga
+              yozing. sizga tezda kurs haqidagi <br /> ma'lumotlarni telegramdan
+              yuborib qo'yadilar.
             </p>
             {/* Arrows and Button */}
             <div className="relative pt-3 pb-4">
@@ -43,6 +49,7 @@ export default function Admin() {
                 className="flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl"
                 onClick={() => {
                   window.location.href = "https://t.me/m/0kO11m-FMjFi";
+                  ReactPixel.track( "CompleteRegistration" );
                 }}
               >
                 <span>ADMINGA YOZISH</span>
@@ -65,6 +72,7 @@ export default function Admin() {
           className="mt-10 flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl"
           onClick={() => {
             window.location.href = "https://t.me/m/0kO11m-FMjFi";
+            ReactPixel.track( "CompleteRegistration" );
           }}
         >
           <span>SOVG'ALARNI OLISH</span>
