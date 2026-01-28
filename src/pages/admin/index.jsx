@@ -9,7 +9,7 @@ import Gifts from "../../components/gifts";
 
 export default function Admin() {
   return (
-    <div className="bg-white flex h-screen items-center justify-center">
+    <div className="bg-white flex items-center justify-center">
       <main className="container mx-auto px-4 py-8 md:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Text Content */}
@@ -42,7 +42,7 @@ export default function Admin() {
               <button
                 className="flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl"
                 onClick={() => {
-                  window.location.href = "https://t.me/turktili_bepul_dars/2";
+                  window.location.href = "https://t.me/m/0kO11m-FMjFi";
                 }}
               >
                 <span>ADMINGA YOZISH</span>
@@ -59,8 +59,22 @@ export default function Admin() {
               ham tashlab beradilar.
             </p>
           </div>
-          <Gifts titleClassName="hidden" />
         </div>
+        <Gifts registerClassName={"hidden"} />
+        <button
+          className="mt-10 flex items-center justify-center gap-2 mx-auto bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-xl rounded-xl shadow-lg hover:shadow-xl"
+          onClick={() => {
+            window.location.href = "https://t.me/m/0kO11m-FMjFi";
+          }}
+        >
+          <span>SOVG'ALARNI OLISH</span>
+          <img
+            width="30"
+            height="30"
+            src="https://optim.tildacdn.one/tild3836-6439-4334-a334-663162313433/-/resize/104x/-/format/webp/492-4925781_telegram.png"
+            alt="Telegram"
+          />
+        </button>
       </main>
     </div>
   );

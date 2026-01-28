@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import irodahoca from "../../../../assets/irodahoca-strelka-2.webp";
 import RegisterModal from "../../../../components/registeration-modal";
+import Gifts from "../../../../components/gifts";
 
 export default function Page() {
   const [ isModalOpen, setIsModalOpen ] = useState( false );
@@ -50,7 +51,7 @@ export default function Page() {
             src={irodahoca}
           />
 
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center flex-col justify-center gap-4">
             <button
               onClick={() => {
                 setIsModalOpen( true );
@@ -59,57 +60,9 @@ export default function Page() {
             >
               RO'YXATDAN O'TISH
             </button>
-          </div>
-          <div className="text-sm">
             <p>Sizni sertifikatli qilmaguncha qo'ymaymiz !</p>
-            <h2 className="my-2 text-[14px] bg-red-500 inline-block p-2 text-white rounded-md">
-              Ro'yxatdan o'tganlar uchun sovg'alarimiz ro'yxati
-            </h2>
-            <ul className="px-6">
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                1. Turk tilining alifbosi video darsi
-              </li>
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                2. Merhaba-singilmanizm video darsi
-              </li>
-            </ul>
-            <ul className="px-6">
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                3. 1000 ta rasmli lug'atlar iborat kitob
-              </li>
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                4. Turk tilida 0 dan 2-3 oyda bemalol gaplasha olish
-              </li>
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                5. Turk tili o'rganishdagi eng katta xatoliklarga yechimlar
-              </li>
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                6. 2026-yilda turk tili orqali 2-3 oyda til sertifikati
-              </li>
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                7. Turk tilidagi barcha eng zo'r darsliklar kanali
-              </li>
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                8. Turk tili o'rganuvchilari uchun motivatsion rolik
-              </li>
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                9. 500 ta gapdan iborat turkcha so'zlashamiz kitobi
-              </li>
-              <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
-                10. 500 ta eng ko'p ishlatiladigan turkcha so'zlar kitobi
-              </li>
-            </ul>
           </div>
-          <div className="flex items-center justify-center gap-4 mt-10">
-            <button
-              onClick={() => {
-                setIsModalOpen( true );
-              }}
-              className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
-            >
-              RO'YXATDAN O'TISH
-            </button>
-          </div>
+          <Gifts />
         </div>
       </div>
       <RegisterModal
