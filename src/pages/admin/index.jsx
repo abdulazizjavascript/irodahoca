@@ -10,6 +10,7 @@ import Gifts from "../../components/gifts";
 // import irodahoca from '../../assets/irodahoca-new-sm.webp'
 
 export default function Admin() {
+
   ReactPixel.init( "737186109151500" );
   ReactPixel.pageView(); // For page load
   ReactPixel.track( "PageView" ); // Custom events

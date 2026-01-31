@@ -39,7 +39,7 @@ export default function RegisterModal( { isOpen, onClose } ) {
         .replace( /[^\d]/g, "" )
         .replace( /^998(\d{2})(\d{7})$/, "+998$1$2" );
 
-      ReactPixel.track( "CompleteRegistration" );
+      ReactPixel.track( "Lead" );
 
       axios.post( "https://irodahoca-production.up.railway.app/register", data );
 
@@ -58,15 +58,15 @@ export default function RegisterModal( { isOpen, onClose } ) {
   return (
     <div
       className={`fixed z-20 inset-0 flex items-center justify-center p-4 transition-all duration-300 ease-in-out ${isOpen
-          ? "opacity-100 bg-black/50"
-          : "opacity-0 bg-black/0 pointer-events-none"
+        ? "opacity-100 bg-black/50"
+        : "opacity-0 bg-black/0 pointer-events-none"
         }`}
       onClick={onClose}
     >
       <div
         className={`bg-white rounded-lg p-6 w-full max-w-md transition-all duration-300 ease-in-out ${isOpen
-            ? "scale-100 opacity-100 translate-y-0"
-            : "scale-95 opacity-0 translate-y-8"
+          ? "scale-100 opacity-100 translate-y-0"
+          : "scale-95 opacity-0 translate-y-8"
           }`}
         onClick={( e ) => e.stopPropagation()}
       >
