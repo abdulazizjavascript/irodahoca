@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 
 import RegisterModal from "../registeration-modal";
 
+import ReactPixel from "react-facebook-pixel";
+
 const Gifts = ( { titleClassName, registerClassName } ) => {
   const [ isModalOpen, setIsModalOpen ] = useState( false );
 
@@ -55,6 +57,7 @@ const Gifts = ( { titleClassName, registerClassName } ) => {
         <button
           onClick={() => {
             // setIsModalOpen( true );
+            ReactPixel.track( "Lead" );
             window.location.href = "https://t.me/m/0kO11m-FMjFi";
           }}
           className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow"

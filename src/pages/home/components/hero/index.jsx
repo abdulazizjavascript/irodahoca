@@ -7,6 +7,8 @@ import irodahoca from "../../../../assets/irodahoca-strelka-2.webp";
 import RegisterModal from "../../../../components/registeration-modal";
 import Gifts from "../../../../components/gifts";
 
+import ReactPixel from "react-facebook-pixel";
+
 export default function Page() {
   const [ isModalOpen, setIsModalOpen ] = useState( false );
 
@@ -55,6 +57,7 @@ export default function Page() {
             <button
               onClick={() => {
                 // setIsModalOpen( true );
+                ReactPixel.track( "Lead" );
                 window.location.href = "https://t.me/m/0kO11m-FMjFi";
               }}
               className="flex -mt-10 z-10 font-bold bg-red-600 text-white px-8 py-2 rounded-xl text-3xl hover:bg-red-700 transition-colors animate-pulseGlow"
