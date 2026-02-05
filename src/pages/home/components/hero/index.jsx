@@ -54,16 +54,23 @@ export default function Page() {
           />
 
           <div className="flex items-center flex-col justify-center gap-2">
-            <button
+            {/* <button
               onClick={() => {
                 // setIsModalOpen( true );
-                ReactPixel.track( "Lead" );
-                window.location.href = "https://t.me/m/0kO11m-FMjFi";
               }}
               className="flex -mt-10 z-10 font-bold bg-red-600 text-white px-8 py-2 rounded-xl text-3xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               ADMINGA YOZISH
-            </button>
+            </button> */}
+            <a
+              href="https://t.me/m/0kO11m-FMjFi"
+              target="_blank"
+              onClick={() => ReactPixel.track( "Lead" )}
+              rel="noopener noreferrer"
+              className="flex -mt-10 z-10 font-bold bg-red-600 text-white px-8 py-2 rounded-xl text-3xl hover:bg-red-700 transition-colors animate-pulseGlow"
+            >
+              ADMINGA YOZISH
+            </a>
             {/* <p>Sizni sertifikatli qilmaguncha qo'ymaymiz !</p> */}
             <p className="text-[14px]">Yuqoridagi "Adminga yozish" tugmasini bosing. <br /> Sizga kurs va narxlari haqidagi ma'lumotlar <br /> adminimiz tomonidan yuborib qo'yiladi.</p>
           </div>

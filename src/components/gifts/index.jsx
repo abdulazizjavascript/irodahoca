@@ -52,24 +52,31 @@ const Gifts = ( { titleClassName, registerClassName } ) => {
         </ul>
       </div>
       <div
-        className={`flex items-center justify-center gap-4 mt-10 ${registerClassName}`}
+        className={`flex items-center justify-center gap-4 mt-4 ${registerClassName}`}
       >
-        <button
+        {/* <button
           onClick={() => {
-            // setIsModalOpen( true );
-            ReactPixel.track( "Lead" );
-            window.location.href = "https://t.me/m/0kO11m-FMjFi";
+            setIsModalOpen( true );
           }}
           className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
         >
           SOVG'ALARNI OLISH
-        </button>
+        </button> */}
+        <a
+          href="https://t.me/m/0kO11m-FMjFi"
+          target="_blank"
+          onClick={() => ReactPixel.track( "Lead" )}
+          rel="noopener noreferrer"
+          className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+        >
+          SOVG'ALARNI OLISH
+        </a>
       </div>
       <RegisterModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen( false )}
       />
-    </div>
+    </div >
   );
 };
 
