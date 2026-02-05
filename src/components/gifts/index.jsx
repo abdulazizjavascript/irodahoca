@@ -11,9 +11,10 @@ const Gifts = ( { titleClassName, registerClassName } ) => {
     <div className="flex justify-center items-center flex-col gap-2">
       <div className="text-sm">
         <h2
-          className={`my-2 text-[14px] bg-red-500 inline-block p-2 text-white rounded-md ${titleClassName}`}
+          className={`my-2 text-[14px] bg-red-500 inline-block px-4 py-2 text-white rounded-md ${titleClassName}`}
         >
-          Ro'yxatdan o'tganlar uchun sovg'alarimiz ro'yxati
+          {/* Ro'yxatdan o'tganlar uchun sovg'alarimiz ro'yxati */}
+          🎁 Shuningdek quyidagi 10 ta sovg'alar ham 🎁
         </h2>
         <ul className="text-center">
           <li className="bg-green-500 text-[12px] my-2 py-1 rounded-md text-white">
@@ -53,11 +54,12 @@ const Gifts = ( { titleClassName, registerClassName } ) => {
       >
         <button
           onClick={() => {
-            setIsModalOpen( true );
+            // setIsModalOpen( true );
+            window.location.href = "https://t.me/m/0kO11m-FMjFi";
           }}
           className="flex font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
         >
-          RO'YXATDAN O'TISH
+          SOVG'ALARNI OLISH
         </button>
       </div>
       <RegisterModal

@@ -51,16 +51,18 @@ export default function Page() {
             src={irodahoca}
           />
 
-          <div className="flex items-center flex-col justify-center gap-4">
+          <div className="flex items-center flex-col justify-center gap-2">
             <button
               onClick={() => {
-                setIsModalOpen( true );
+                // setIsModalOpen( true );
+                window.location.href = "https://t.me/m/0kO11m-FMjFi";
               }}
-              className="flex -mt-14 z-10 font-bold bg-red-600 text-white px-12 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className="flex -mt-10 z-10 font-bold bg-red-600 text-white px-8 py-2 rounded-xl text-3xl hover:bg-red-700 transition-colors animate-pulseGlow"
             >
-              RO'YXATDAN O'TISH
+              ADMINGA YOZISH
             </button>
-            <p>Sizni sertifikatli qilmaguncha qo'ymaymiz !</p>
+            {/* <p>Sizni sertifikatli qilmaguncha qo'ymaymiz !</p> */}
+            <p className="text-[14px]">Yuqoridagi "Adminga yozish" tugmasini bosing. <br /> Sizga kurs va narxlari haqidagi ma'lumotlar <br /> adminimiz tomonidan yuborib qo'yiladi.</p>
           </div>
           <Gifts />
         </div>
