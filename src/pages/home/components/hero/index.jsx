@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <section className="bg-white roboto-condensed">
       <div className="container pt-4 pb-8 text-center">
-        <h1 className="flex justify-center text-[18px] font-bold mb-3 text-white uppercase">
+        <h1 className="flex justify-center text-[20px] font-bold mb-3 text-white uppercase">
           <span className="px-3 rounded-tl-lg rounded-bl-lg py-1 bg-green-500">
             Turkçe konuş
           </span>
@@ -22,19 +22,21 @@ export default function Page() {
             100% sertifika
           </span>
         </h1>
-        <h3 className="text-[16px] font-bold mb-2">
-          <span className="text-[17.5px]">KURSIMIZ ORQALI SIZNI 0 DAN 3 OYDA</span>
+        <h3 className="font-bold mb-2">
+          <span className="text-[19px]">KURSIMIZ ORQALI SIZNI 0 DAN 3 OYDA</span>
           <br />
-          <span>B2 SERTIFIKAT DARAJASIGA CHIQARAMIZ</span>
-          <br />
-          <span className="text-[14.5px]">IMTIHONGA KIRIB SERTIFIKAT OLOLMASANGIZ</span>
-          <br />
-          <span className="text-[21.5px] text-red-600">PULINGIZNI 100% QAYTARAMIZ</span>
+          <span className="text-[17.5px]">B2 SERTIFIKAT DARAJASIGA CHIQARAMIZ</span>
         </h3>
+
+        <div className="mb-2">
+          <h3 className="font-bold"> <span className="text-[15.8px]">IMTIHONGA KIRIB SERTIFIKAT OLOLMASANGIZ</span>
+            <br />
+            <span className="text-[23.5px] text-red-600">PULINGIZNI 100% QAYTARAMIZ</span></h3>
+        </div>
 
         <div className="relative max-w-xl mx-auto mb-10">
           <LazyLoadImage
-            className="mx-auto mb-8 rounded-3xl w-full object-cover h-[250px]"
+            className="mx-auto mb-8 rounded-3xl w-[95%] object-cover"
             alt="Irodahoca"
             fetchPriority="high"
             effect="blur"
@@ -55,7 +57,7 @@ export default function Page() {
               target="_blank"
               onClick={() => ReactPixel.track( "Lead" )}
               rel="noopener noreferrer"
-              className="flex -mt-10 z-10 font-bold bg-red-600 text-white px-8 py-2 rounded-xl text-xl hover:bg-red-700 transition-colors animate-pulseGlow"
+              className="flex -mt-10 z-10 font-bold bg-blue-500 text-white px-8 py-2 rounded-xl text-[23px] hover:bg-red-700 transition-colors animate-pulseGlow"
             >
               TEZROQ MA'LUMOT OLISH
             </a>
@@ -66,7 +68,7 @@ export default function Page() {
         </div>
 
         <div className="max-w-3xl mx-auto font-bold mb-8">
-          <h2 className="inline-block p-2 rounded-lg bg-red-500 text-white mb-4">
+          <h2 className="inline-block text-[17px] py-2 px-3 rounded-lg bg-red-600 text-white mb-4">
             FAQAT MAY OYI UCHUN 3+1 CHEGIRMASI
           </h2>
           <p>

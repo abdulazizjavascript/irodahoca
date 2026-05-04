@@ -16,8 +16,8 @@ export default {
       },
       keyframes: {
         pulseGlow: {
-          '0%, 100%': { boxShadow: '0 0 10px 0px yellow' },
-          '50%': { boxShadow: '0 0 20px 5px yellow' },
+          '0%, 100%': { boxShadow: '0 0 10px 0px red' },
+          '50%': { boxShadow: '0 0 20px 5px red' },
         },
       },
       animation: {
