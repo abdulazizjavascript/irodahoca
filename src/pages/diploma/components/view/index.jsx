@@ -3,9 +3,16 @@
 import PropTypes from "prop-types";
 
 const DiplomaView = ( { name, diplomaRef } ) => {
+
+  const today = new Date();
+  const day = String( today.getDate() ).padStart( 2, "0" );
+  const month = String( today.getMonth() + 1 ).padStart( 2, "0" ); // 0-indexed
+  const year = today.getFullYear();
+  const currentDate = `${day}.${month}.${year}`
+
   return (
     <div ref={diplomaRef} className="fixed left-[10000px] top-[10000px] -z-10 py-8 font-condensed bg-[url('/uzturk-flag.png')] bg-cover bg-center w-[1123px] h-[794px] bg-white border-8 border-yellow-500 px-20 mx-auto">
-      
+
       {/* Border Decorations */}
       <div className="absolute top-0 left-0">
         <img className="-rotate-90" width="300px" src="/christmas-corner.png" alt="christmas-corner" />
@@ -61,7 +68,7 @@ const DiplomaView = ( { name, diplomaRef } ) => {
       </div>
 
       <div className="text-center mt-4">
-        <p className="text-white">17.01.2026</p>
+        <p className="text-white"> {currentDate} </p>
       </div>
     </div>
   );
