@@ -38,7 +38,7 @@ export default function GraduationPage() {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-md w-full">
         <div className="mb-3 text-center">
-          <h1 className='font-bold'>O'quvchilaringizni turk tili kursimizni tugatganligi bilan tabriklaymiz</h1>
+          <h1 className='text-xl font-bold'>Sizni o'quvchilaringiz turk tili kursimizni tugatganligi bilan tabriklaymiz 🥳🥳</h1>
           <h1 className='mt-3 font-bold'>Marhamat, o'quvchilaringiz ism-familiyalarini kiritib sertifikatlarini o'zlariga taqdim qilishingiz mumkin</h1>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
