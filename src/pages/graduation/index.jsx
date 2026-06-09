@@ -38,10 +38,8 @@ export default function GraduationPage() {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-md w-full">
         <div className="mb-3 text-center">
-          <span>Turk tili bo'yicha O'zbekistondagi eng katta</span>
-          <h1 className="text-3xl text-white font-bold my-3"><span className="text-green-500">SERTIFIKAT</span> <span className="text-red-500">SIRLARI</span></h1>
-          <span>nomli vibenarimizning 1-kunida qatnashganingiz uchun tashakkur. Qolgan kunlarda ham sizni kutamiz 😍</span>
-          <h1 className='mt-3 font-bold'>Marhamat, ism familiyangizni kiritib sertifikatingizni olishingiz mumkin</h1>
+          <h1 className='font-bold'>O'quvchilaringizni turk tili kursimizni tugatganligi bilan tabriklaymiz</h1>
+          <h1 className='mt-3 font-bold'>Marhamat, o'quvchilaringiz ism-familiyalarini kiritib sertifikatlarini o'zlariga taqdim qilishingiz mumkin</h1>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
